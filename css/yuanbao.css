@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-14 20:27:33
+* @Last Modified time: 2015-11-14 23:38:34
 */
 
 
@@ -599,6 +599,185 @@ body {
 
 .msg-content {
     color: #aaa;
+}
+
+
+/* 聚宝盆的奇葩css */
+
+
+/* 聚宝盆红色块 */
+
+.well-red {
+    background: #ed4930;
+    color: white;
+    padding: 2rem;
+    border-top: 2px solid #ddd;
+}
+
+.well-red-title {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+.well-red-title img {
+    width: 25px;
+    height: 25px;
+    margin-top: -3px;
+}
+
+.well-red-content {
+    margin-top: 3px;
+}
+
+.well-red-num {
+    margin-top: 2rem;
+    font-size: 6rem;
+}
+
+
+/* 聚宝盆白色块 */
+
+.well-white {
+    padding: 1.8rem;
+    background: white;
+    color: #aaa;
+}
+
+.well-white-num {
+    font-size: 5rem;
+    margin-top: 1rem;
+    color: #ed4930;
+}
+
+
+/* 聚宝盆灰色块 */
+
+.well-grey {
+    background: #eee;
+    overflow: hidden;
+}
+
+.well-grey-item {
+    height: 100px;
+    background: #eee;
+    width: 49.6%;
+    float: left;
+    padding: 2rem 1.5rem;
+}
+
+.well-grey-gutter {
+    width: 2px;
+    position: relative;
+    top: 20px;
+    height: 70px;
+    float: left;
+    background: #ddd;
+}
+
+.well-grey-title {
+    color: #aaa;
+}
+
+.well-grey-num {
+    font-size: 2.4rem;
+    color: #847A7A;
+    margin-top: 1rem;
+}
+
+
+/* 聚宝盆按钮组 */
+
+.cc-btn-group {
+    width: 100%;
+}
+
+.cc-btn-group .btn-pink {
+    float: left;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.cc-btn-group .btn-pink {
+    width: 49.6%;
+}
+
+
+/* 登录 */
+
+.login-form {
+    color: #bbb;
+}
+
+.login-form .flat-form-group {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.login-form .flat-form-login-icon {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.login-form .flat-form-login-icon img {
+    width: 36px;
+    height: 36px;
+    float: left;
+}
+
+.login-form .flat-form-label {
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.login-form .flat-input {
+    padding-top: 0.5em;
+    font-size: 1.8rem;
+}
+
+
+/* 设置 */
+
+.setting-card {
+    background: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.setting-card a {
+    color: #aaa;
+}
+
+.setting-card-num {
+    color: #ddd;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.setting-card .glyphicon {
+    margin-top: 4px;
+    color: #ddd;
+}
+
+.setting-card-title {
+    padding: 1.5rem 1rem;
+    color: #428bca;
+    border-bottom: 1px solid #ddd;
+}
+
+.setting-card-collection {
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+.setting-card-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1.2rem 1rem 1.2rem 0;
+}
+
+.setting-card-item.no-border {
+    border: none;
 }
 
 
