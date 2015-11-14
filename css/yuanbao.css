@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-14 17:20:30
+* @Last Modified time: 2015-11-14 19:17:23
 */
 
 
@@ -90,7 +90,6 @@ body {
 
 .selector-list {
     padding: 0;
-    border-bottom: 1px solid #ddd;
 }
 
 .selector-list a {
@@ -99,7 +98,7 @@ body {
 }
 
 .selector-list-item {
-    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     padding: 1.5rem 0 0.5rem 0;
     transition: all 0.3s ease-in-out;
@@ -543,6 +542,57 @@ body {
 }
 
 
+/* 消息，右上角的小红点 */
+
+.msg-card-group-item {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.msg-card-group-item .col-xs-2 {
+    padding-left: 1rem;
+    position: relative;
+}
+
+.with-num {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.msg-num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 2px;
+    background: red;
+    color: white;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+}
+
+.msg-title {
+    display: inline-block;
+    padding-top: 3px;
+    font-size: 1.8rem;
+}
+
+.msg-time {
+    float: right;
+    color: #aaa;
+}
+
+.msg-content {
+    color: #aaa;
+}
+
+
 /* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
 
 .color-pink {
@@ -582,11 +632,7 @@ body {
     /* clearfix */
 }
 
-.btn-pink {
-    background: #ff6349!important;
-    color: white;
-}
-
+.btn-pink,
 .btn-pink:hover,
 .btn-pink:focus,
 .btn-pink:active:focus,
@@ -596,10 +642,34 @@ body {
 .btn-pink.active.focus {
     color: white;
     background: #ff6349!important;
+    border: 1px solid #ff6349!important;
+}
+
+.btn-grey,
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active:focus,
+.btn-grey.active:focus,
+.btn-grey.focus,
+.btn-grey:active.focus,
+.btn-grey.active.focus {
+    color: #428bca;
+    background: #ddd!important;
+    border: 1px solid #ddd!important;
 }
 
 
 /* 表单样式 */
+
+.notify {
+    height: 20px;
+    line-height: 20px;
+    font-size: 1.6rem;
+    color: #4C4949;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 1.2rem;
+}
 
 .form {
     margin-top: 2rem;
@@ -634,6 +704,7 @@ body {
     height: 50px;
     line-height: 50px;
     font-size: 1.6rem;
+    margin-bottom: 0;
 }
 
 .form-group .col-xs-4 {
@@ -647,6 +718,31 @@ body {
 
 .form-group:last-child {
     border-bottom: none;
+}
+
+
+/* flat form-group */
+
+.flat-form-group {
+    background: white;
+    padding: 10px 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.flat-form-label {
+    line-height: 34px;
+    height: 34px;
+    font-size: 1.8rem;
+    float: left;
+}
+
+.flat-form-group .flat-input {
+    float: left;
+    border: none;
+    height: 34px;
+    line-height: 34px;
+    font-size: 1.6rem;
 }
 
 

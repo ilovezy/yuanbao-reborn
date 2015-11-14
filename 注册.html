@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>找回密码</title>
+    <title>注册</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
 </head>
@@ -16,16 +16,29 @@
         <div class="nav-icon pull-left">
             <a href="我的.html"><span class="glyphicon glyphicon-menu-left"></span></a>
         </div>
-        <span class="nav-title">找回密码</span>
+        <span class="nav-title">注册</span>
     </nav>
 
     <!-- main -->
+    <form class="form">
+        <div class="row">
+            <div class="col-xs-6">
+                <input type="text" class="flat-input" placeholder="推荐人号码">
+            </div>
+            <div class="col-xs-6">
+                <button class="btn btn-default btn-grey btn-lg pull-right" style="margin-top: 2px;">
+                    通讯录
+                </button>
+            </div>
+        </div>
+    </form>
+
     <form class="form">
         <input type="text" class="flat-input" placeholder="手机号码">
 
         <div class="row">
             <div class="col-xs-6">
-                <input type="text" class="flat-input" placeholder="验证码">
+                <input type="text" class="flat-input" placeholder="短信验证码">
             </div>
             <div class="col-xs-6 ">
                 <button class="btn btn-default btn-lg btn-pink pull-right" style="margin-top: 2px;">
@@ -36,9 +49,9 @@
     </form>
 
     <form class="form">
-        <input type="text" class="flat-input" placeholder="请输入验证码">
+        <input type="text" class="flat-input" placeholder="请输入登录密码">
 
-        <input type="text" class="flat-input" placeholder="请再次输入密码">
+        <input type="text" class="flat-input" placeholder="请输入您的昵称">
     </form>
 
     <!-- footer button -->
