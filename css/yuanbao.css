@@ -1,0 +1,598 @@
+/*
+* @Author: Administrator
+* @Date:   2015-11-11 21:54:55
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-11-14 15:35:34
+*/
+
+
+/* cover bootstrap */
+
+a {
+    text-decoration: none!important;
+}
+
+.nav-icon {
+    padding-top: 2px;
+}
+
+.nav-icon a {
+    color: white;
+}
+
+
+/* config */
+
+
+/* 我的 */
+
+.index-top {
+    background: url('../img/index/top-bg.png') no-repeat;
+    height: 180px;
+}
+
+.index-top-avatar {
+    text-align: center;
+}
+
+.index-top-fans {
+    margin-top: 70px;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.index-top-fans-num {
+    font-size: 2rem;
+}
+
+.index-top-avatar-img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+
+/* 我的 九宫格 */
+
+.selector-list {
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.selector-list a {
+    display: block;
+    color: #4C4949;
+}
+
+.selector-list-item {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 1.5rem 0 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.selector-list-item:hover {
+    background: #eee;
+}
+
+.selector-list-item img {
+    width: 46px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.selector-list-item p {
+    font-size: 1.6rem;
+}
+
+
+/* 个人账户*/
+
+.countcard {
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.countcard .countcard-item-action>div {
+    height: 40px;
+    line-height: 40px;
+}
+
+.countcard>div {
+    float: left;
+}
+
+.countcard-item-img,
+.countcard-item-name {
+    width: 20%;
+}
+
+.countcard-item-action {
+    width: 60%;
+    padding-right: 15px;
+}
+
+.img img {
+    height: 45px;
+}
+
+.userAccount-main {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* 个人信息*/
+
+.userInfo-main {
+    border-top: 1px solid #ddd;
+}
+
+.userInfo-main .readable {
+    letter-spacing: 0.5rem;
+}
+
+.userInfo-main .readable-1 {
+    letter-spacing: 0.3rem;
+}
+
+.card-list-item.with-avatar {
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-list-item {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-list-item .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card-list-item.with-avatar .content {
+    height: 90px;
+    padding-top: 10px;
+}
+
+.card-list-item .content {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.card-list-item .glyphicon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.card-list-item .avatar {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* 传播链*/
+
+.card-list {
+    border-top: 1px solid #ddd;
+}
+
+.tc-user {
+    border-bottom: 1px solid #ddd;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 80px;
+}
+
+.tc-user .avatar-2 {
+    height: 50px;
+}
+
+.tc-user .username {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tc-user .userid {
+    font-size: 1.5rem;
+}
+
+.tc-user .glyphicon {
+    padding-top: 15px;
+    color: #bbb;
+}
+
+.tc-fans .col-xs-6 {
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    color: #bbb;
+}
+
+.tc-fans .col-xs-6 span {
+    margin-bottom: 0.5rem;
+}
+
+.tc-icons {
+    width: 40px;
+    height: 40px;
+}
+
+.card-list-item .avatar-2 {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 5px;
+}
+
+.card-list-item .col-xs-7 {
+    font-size: 1.6rem;
+}
+
+
+/* 推广 */
+
+.promote-nav {
+    background: #F7F7F7;
+    /* 这是特殊的灰色 */
+    border-bottom: 1px solid #ddd;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.promote-nav img {
+    width: 40px;
+    height: 40px;
+}
+
+.promote-nav .btn-group {
+    margin: 0 auto;
+}
+
+.promote-nav .btn-group .btn {
+    padding-bottom: 0.5rem;
+    border-color: #4C4949;
+}
+
+.promote-nav .btn-group .btn.active {
+    background: #4C4949;
+    color: white;
+}
+
+.promote-card {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.promote-card:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.promote-card .promote-time {
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.promote-card .promote-img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+.promote-card .promote-share {
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+.promote-card .promote-note {
+    font-size: 1.7rem;
+    padding-left: 0;
+    color: #4C4949;
+}
+
+.promote-card .share-point {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: #ff6600;
+    margin-left: 1rem;
+}
+
+.promote-card .share-btn {
+    padding: 0.1rem 0.3rem;
+    font-size: 1.6rem;
+    color: #aaa;
+    border: 1px solid #4C4949;
+    border-radius: 4px;
+}
+
+.promote-card .share-btn img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: -0.2rem;
+}
+
+
+/* 我的推广的头像部分*/
+
+.promote-user {
+    height: 55px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    margin-left: 1.5rem;
+    margin-top: -3px;
+}
+
+.promote-user .col-xs-3 {
+    margin-left: -2rem;
+    margin-right: 0;
+}
+
+.promote-user .col-xs-9 {
+    padding-left: 1rem;
+}
+
+.promote-user .promote-username {
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+
+/* 社群的搜索栏 */
+
+.search-bar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-bar button {
+    bottom: 0;
+    color: #aaa;
+}
+
+.search-bar .col-xs-6 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.search-bar button,
+.search-bar .input-group * {
+    border: none;
+}
+
+.search-bar .col-xs-3:last-child {
+    padding-left: 1.1rem;
+}
+
+
+/* 社群 */
+
+.com-card {
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+.com-card:last-child {
+    padding-bottom: 1rem;
+}
+
+.card-list-img {
+    width: 33%;
+    float: left;
+    padding: 1px;
+}
+
+.com-card-title {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.com-card-title hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.com-card-title span {
+    position: absolute;
+    width: 50px;
+    background: white;
+    margin-left: -25px;
+    top: 0;
+    font-size: 1.6rem;
+}
+
+.color-pink {
+    color: #F05CE9;
+}
+
+.color-blue {
+    color: #428bca;
+}
+
+
+/* 元宝传媒 */
+
+.media-card-item {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.media-card-item>div {
+    float: left;
+}
+
+.media-img {
+    width: 80px;
+    height: 80px;
+}
+
+.media-img img {
+    width: 80px;
+    height: 80px;
+}
+
+.media-card-content {
+    text-wrap: nowrap;
+    float: left;
+    padding-left: 1rem;
+}
+
+.media-card-title {
+    font-size: 1.8rem!important;
+    font-weight: 600;
+    color: black!important;
+    margin-top: -3px;
+}
+
+.media-card-content p {
+    font-size: 1.4rem;
+    color: #bbb;
+    margin-bottom: 1px;
+}
+
+
+/* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
+
+.text-orange {
+    color: #ff6600
+}
+
+.text-pink {
+    color: #ff6349
+}
+
+.text-yellow {
+    color: #ffae29
+}
+
+.nav {
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.8rem;
+    text-align: center;
+    background: #ff6600;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    /* clearfix */
+}
+
+.btn-pink {
+    background: #ff6349!important;
+    color: white;
+}
+
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active:focus,
+.btn-pink.active:focus,
+.btn-pink.focus,
+.btn-pink:active.focus,
+.btn-pink.active.focus {
+    color: white;
+    background: #ff6349!important;
+}
+
+.bg-grey {
+    background: #f3f3f3!important;
+}
+
+.bg-white {
+    background: white;
+}
+
+
+/* 表单样式 */
+
+.form {
+    margin-top: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: white;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.form .flat-input {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+}
+
+.form .flat-input:last-child {
+    border-bottom: none;
+}
+
+
+/* 找回密码 */
+
+.form-group {
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6rem;
+}
+
+.form-group .col-xs-4 {
+    padding-left: 0;
+}
+
+.form-group .flat-input {
+    height: 49px;
+    /* 这里少一px可以防止下边框覆盖 */
+}
+
+.form-group:last-child {
+    border-bottom: none;
+}
+
+
+/* footer */
+
+.footer-fit {
+    height: 90px;
+}
+
+.footer {
+    background: white;
+    height: 70px;
+    width: 100%;
+    position: fixed!important;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    padding-top: 0.8rem;
+    padding-bottom: 0.3rem;
+    z-index: 1000;
+}
+
+.footer img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0.3rem;
+}
+
+.footer p {
+    color: #aaa;
+    font: 2rem;
+}
