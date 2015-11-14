@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-14 15:35:34
+* @Last Modified time: 2015-11-14 17:20:30
 */
 
 
@@ -21,31 +21,65 @@ a {
 }
 
 
+/* 多个图片大小在这里设置 */
+
+.img-tiny {
+    width: 40px;
+    height: 40px;
+}
+
+.img-sm {
+    width: 50px;
+    height: 50px;
+}
+
+.img-md {
+    height: 60px;
+    width: 60px;
+}
+
+.img-lg {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* 这里我直接写在 body里了，省一大堆dom, 因为所有的页面底色都为淡灰色 */
+
+body {
+    background: #f3f3f3!important;
+}
+
+.bg-white {
+    background: white;
+}
+
+
 /* config */
 
 
 /* 我的 */
 
-.index-top {
-    background: url('../img/index/top-bg.png') no-repeat;
+.my-top {
+    background: url('../img/my/top-bg.png') no-repeat;
     height: 180px;
 }
 
-.index-top-avatar {
+.my-top-avatar {
     text-align: center;
 }
 
-.index-top-fans {
+.my-top-fans {
     margin-top: 70px;
     color: white;
     font-size: 1.6rem;
 }
 
-.index-top-fans-num {
+.my-top-fans-num {
     font-size: 2rem;
 }
 
-.index-top-avatar-img {
+.my-top-avatar-img {
     max-width: 100%;
     border-radius: 50%;
     margin-top: 40px;
@@ -233,6 +267,58 @@ a {
 
 .card-list-item .col-xs-7 {
     font-size: 1.6rem;
+    color: black;
+}
+
+
+/* 查看下游 */
+
+.card-group {
+    margin-bottom: 1rem;
+}
+
+.card-group-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.card-group .col-xs-7,
+.card-group .col-xs-2 {
+    padding-left: 0;
+}
+
+.card-group-title {
+    font-size: 2rem;
+}
+
+.card-group-item {
+    background: white;
+    padding-top: 0.5rem;
+}
+
+.card-group-item-title {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.card-group-item .img-tiny {
+    margin-top: 5px;
+    float: right;
+}
+
+
+/* 邀请粉丝 */
+
+.invite {
+    background: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.register-add {
+    margin-bottom: 3rem;
 }
 
 
@@ -414,14 +500,6 @@ a {
     font-size: 1.6rem;
 }
 
-.color-pink {
-    color: #F05CE9;
-}
-
-.color-blue {
-    color: #428bca;
-}
-
 
 /* 元宝传媒 */
 
@@ -467,6 +545,14 @@ a {
 
 /* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
 
+.color-pink {
+    color: #F05CE9;
+}
+
+.color-blue {
+    color: #428bca;
+}
+
 .text-orange {
     color: #ff6600
 }
@@ -477,6 +563,10 @@ a {
 
 .text-yellow {
     color: #ffae29
+}
+
+.text-grey {
+    color: #aaa;
 }
 
 .nav {
@@ -506,14 +596,6 @@ a {
 .btn-pink.active.focus {
     color: white;
     background: #ff6349!important;
-}
-
-.bg-grey {
-    background: #f3f3f3!important;
-}
-
-.bg-white {
-    background: white;
 }
 
 
