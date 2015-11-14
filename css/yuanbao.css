@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-14 19:17:23
+* @Last Modified time: 2015-11-14 20:27:33
 */
 
 
@@ -214,6 +214,15 @@ body {
 
 .card-list {
     border-top: 1px solid #ddd;
+}
+
+.card-list .card-title {
+    color: black!important;
+}
+
+.card-list .col-xs-9 {
+    font-size: 1.6rem;
+    color: #aaa;
 }
 
 .tc-user {
@@ -735,6 +744,21 @@ body {
     height: 34px;
     font-size: 1.8rem;
     float: left;
+}
+
+.flat-form-avatar {
+    float: left;
+    margin-right: 1rem;
+    position: relative;
+    top: -3px;
+}
+
+.flat-form-checkbox {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    position: relative;
+    top: 3px;
 }
 
 .flat-form-group .flat-input {
