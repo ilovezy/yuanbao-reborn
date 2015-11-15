@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 11:19:54
+* @Last Modified time: 2015-11-15 12:06:24
 */
 
 
@@ -84,6 +84,75 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #897D7D;
+}
+
+
+/* 商城-分类 */
+
+.classify-bar {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    color: #aaa;
+    background: white;
+    padding-bottom: 1rem;
+}
+
+.classify-bar ul.dropdown {
+    z-index: 100;
+}
+
+.classify-bar .input-group * {
+    background: #ddd;
+    border-bottom: none;
+}
+
+.classify-bar .input-group button,
+.classify-bar .input-group .form-control {
+    border: none;
+    box-shadow: none;
+    font-size: 1.6rem;
+    border-bottom: none;
+}
+
+.classify-bar .input-group .form-control {
+    height: 38px;
+}
+
+.classify-bar .input-group-btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 1.6rem;
+}
+
+.classify-bar .input-group .caret {
+    margin-left: 0.6rem;
+}
+
+.classify-bar .classify-bar-cancel {
+    padding-left: 0;
+    margin-top: 0.7rem;
+}
+
+.classify-panel {
+    background: #aaa;
+}
+
+.classify-panel .btn {
+    margin: 1rem;
+}
+
+.classify-collection {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #ddd;
+}
+
+.classify-collection-item {
+    color: #776D6D;
+    background: #ddd;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
 }
 
 
