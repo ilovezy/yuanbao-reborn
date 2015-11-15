@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 21:00:46
+* @Last Modified time: 2015-11-15 21:08:27
 */
 
 
@@ -965,9 +965,11 @@ body {
     margin-bottom: 2rem;
     padding-left: 0;
     padding-right: 0;
+    height: 46px;
 }
 
 .account-change * {
+    font-size: 1.6rem;
     border: none!important;
 }
 
