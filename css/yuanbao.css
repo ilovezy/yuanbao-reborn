@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 20:51:04
+* @Last Modified time: 2015-11-15 20:52:21
 */
 
 
@@ -960,7 +960,7 @@ body {
 
 /* account-change 账户变化记录的 tab页，覆盖bootstrap */
 
-.account-change {
+.nav.account-change {
     background: white;
     margin-bottom: 2rem;
     padding-left: 0;
