@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 20:52:21
+* @Last Modified time: 2015-11-15 21:00:46
 */
 
 
@@ -159,7 +159,7 @@ body {
 /* 我的 */
 
 .my-top {
-    background: url('../img/my/top-bg.png') no-repeat;
+    background: url('../img/我的/top-bg.png') no-repeat;
     height: 180px;
 }
 
