@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 14:23:06
+* @Last Modified time: 2015-11-15 20:51:04
 */
 
 
@@ -955,6 +955,50 @@ body {
 
 .store-card-body .store-img-bottom img {
     height: 90px;
+}
+
+
+/* account-change 账户变化记录的 tab页，覆盖bootstrap */
+
+.account-change {
+    background: white;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.account-change * {
+    border: none!important;
+}
+
+.account-change li {
+    width: 20%;
+    border-right: 1px solid #ddd!important;
+    text-align: center;
+}
+
+.account-change li a {
+    border-right: 1px solid #ddd;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.account-change li a:hover {
+    background: white;
+}
+
+.account-change li.active {
+    border-bottom: 4px solid #ff6600!important;
+}
+
+.tab-content {
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 10px 0 0 15px;
+}
+
+.tab-pane-card {
+    border-bottom: 1px solid #ddd;
 }
 
 
