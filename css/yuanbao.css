@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 12:06:24
+* @Last Modified time: 2015-11-15 14:23:06
 */
 
 
@@ -876,6 +876,85 @@ body {
 
 .setting-card-item.no-border {
     border: none;
+}
+
+
+/* 商城 */
+
+.mr-1rem {
+    margin-right: 1rem;
+}
+
+.store-nav {
+    padding-top: 0.2rem;
+}
+
+.store-nav .input-group-addon {
+    height: 34.5px;
+}
+
+.store-nav img {
+    width: 20px;
+    margin-top: -7px
+}
+
+.store-nav-search {
+    width: 70%;
+    float: left;
+    padding-top: 0.5rem;
+}
+
+
+/* 商品展示，这里用固定高度了 */
+
+.store-card {
+    background: white;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.store-card .store-card-title {
+    font-size: 2rem;
+    color: #ff6600;
+}
+
+.store-card .more,
+.store-card .glyphicon {
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+.store-card .glyphicon {
+    position: relative;
+    top: 3px;
+}
+
+.store-card .store-card-body {
+    margin-top: 1rem;
+}
+
+.store-card-body div {
+    padding: 0;
+}
+
+.store-card-body {
+    height: 150px;
+}
+
+.store-card-body img {
+    width: 100%;
+}
+
+.store-card-body .store-img-right img {
+    height: 150px;
+}
+
+.store-card-body .store-img-top img {
+    height: 60px;
+}
+
+.store-card-body .store-img-bottom img {
+    height: 90px;
 }
 
 
