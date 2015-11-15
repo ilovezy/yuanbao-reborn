@@ -77,6 +77,12 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+    $('.dropdown-toggle').click(function(event) {
+        $(this).next('ul.dropdown-menu').slideToggle();
+    });
+    </script>
 </body>
 
 </html>
