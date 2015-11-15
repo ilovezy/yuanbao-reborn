@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-14 23:38:34
+* @Last Modified time: 2015-11-15 11:19:54
 */
 
 
@@ -56,6 +56,35 @@ body {
 
 
 /* config */
+
+
+/* index filter */
+
+.index-filter {
+    background: #919191;
+    display: none;
+}
+
+.index-filter-title,
+.glyphicon {
+    color: white;
+}
+
+.index-filter-card {
+    border-bottom: 1px solid #897D7D;
+    padding-bottom: 1rem;
+}
+
+.index-filter-card .btn {
+    margin-right: 1.5rem;
+    min-width: 6rem;
+}
+
+.index-filter-confirm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #897D7D;
+}
 
 
 /* 我的 */
@@ -844,6 +873,19 @@ body {
     color: #428bca;
     background: #ddd!important;
     border: 1px solid #ddd!important;
+}
+
+.btn-white,
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active:focus,
+.btn-white.active:focus,
+.btn-white.focus,
+.btn-white:active.focus,
+.btn-white.active.focus {
+    color: #3F3232;
+    background: white!important;
+    border: 1px solid white!important;
 }
 
 

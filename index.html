@@ -15,7 +15,11 @@
             <a href="我的.html"><span class="glyphicon glyphicon-menu-left"></span></a>
         </div>
         <span class="nav-title">元宝传媒</span>
+        <span class="pull-right">
+            <img src="img/scan-icon.png" style="width: 2rem;">
+        </span>
     </nav>
+
 
     <!-- search bar -->
     <div class="container search-bar">
@@ -46,17 +50,50 @@
 
             <div class="col-xs-3">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-default btn-filter">
                         筛选
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- filter -->
+    <div class="container index-filter">
+        <div class="row">
+            <div class="col-xs-12 index-filter-card">
+                <h4 class="index-filter-title">
+                    广告金额
+                </h4>
+                <button class="btn btn-pink">从低到高</button>
+                <button class="btn btn-white">从高到低</button>
+            </div>
+
+            <div class="col-xs-12 index-filter-card">
+                <h4 class="index-filter-title">
+                    发布时间
+                </h4>
+                <button class="btn btn-pink">不限</button>
+                <button class="btn btn-white">最新发布</button>
+                <button class="btn btn-white">3天内</button>
+            </div>
+
+            <div class="col-xs-12 index-filter-card">
+                <h4 class="index-filter-title">
+                    有无红包
+                </h4>
+                <button class="btn btn-pink">不限</button>
+                <button class="btn btn-white">有</button>
+                <button class="btn btn-white">无</button>
+            </div>
+
+            <div class="col-xs-12 index-filter-confirm">
+                <button class="btn btn-lg btn-block btn-pink btn-filter-confirm">确认</button>
+            </div>
+
+            <div class="text-center">
+                <span class="glyphicon glyphicon-eject btn-filter-confirm"></span>
             </div>
         </div>
     </div>
@@ -162,6 +199,17 @@
         </div>
     </div>
 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+    $('.btn-filter').on('click', function(event) {
+        event.preventDefault();
+        $('.index-filter').slideToggle();
+    });
+
+    $('.btn-filter-confirm').click(function(event) {
+        $(this).closest('.index-filter').slideUp();
+    });
+    </script>
 </body>
 
 </html>
