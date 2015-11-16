@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
-* @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-15 21:17:34
+* @Last Modified by:   fhc
+* @Last Modified time: 2015-11-16 12:03:00
 */
 
 
@@ -166,7 +166,7 @@ body {
 /* 我的 */
 
 .my-top {
-    background: url('../img/我的/top-bg.png') no-repeat;
+    background: url('../img/my/top-bg.png') no-repeat;
     height: 180px;
 }
 
@@ -894,10 +894,6 @@ body {
 
 .store-nav {
     padding-top: 0.2rem;
-}
-
-.store-nav .input-group-addon {
-    height: 34.5px;
 }
 
 .store-nav img {
