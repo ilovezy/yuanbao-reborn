@@ -21,6 +21,31 @@
 
     <!-- main -->
     <div class="container">
+
+        <div class="row flat-form-group">
+            <span class="flat-form-label">
+                现金账户：
+            </span>
+            <span class="flat-input">
+                <span class="text-orange">0.00</span> 元
+            </span>
+        </div>
+
+        <br>
+        <div class="row flat-form-group">
+            <span class="flat-form-label">
+                提取金额：
+            </span>
+            <input type="text" class="flat-input" style="width: 70%" placeholder="每笔限额500-50000，每日限3次">
+        </div>
+
+        <br>
+
+        <div class="infomation">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque consectetur, aliquid quo reiciendis, doloribus totam, esse et quidem eum, eaque maiores optio. Facilis doloribus nam, possimus officia ratione porro deserunt neque excepturi consequatur accusamus id quos fugit autem non repellat ullam amet mollitia.
+        </div>
+        <br>
+
         <div class="row flat-form-group">
             <span class="flat-form-label">
                 收款人：
@@ -31,34 +56,27 @@
 
         <br>
 
-        <div class="row flat-form-group">
-            <span class="flat-form-label">
-                提取金额：
-            </span>
-            <input type="text" class="flat-input" style="width: 70%" placeholder="每笔限额500-50000，每日限3次">
-        </div>
-        <br>
-        <div class="infomation">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque consectetur, aliquid quo reiciendis, doloribus totam, esse et quidem eum, eaque maiores optio. Facilis doloribus nam, possimus officia ratione porro deserunt neque excepturi consequatur accusamus id quos fugit autem non repellat ullam amet mollitia.
+        <div class="row flat-form-confirm">
+            <div class="col-xs-6">
+                <label>短信验证码：</label>
+                <span class="label label-red">
+                    获取
+                </span>
+            </div>
+
+            <div class="col-xs-6">
+                <label>语音验证码：</label>
+                <span class="label label-red">
+                    获取
+                </span>
+            </div>
         </div>
 
-        <br>
-        <div class="row flat-form-group">
-            <span class="flat-form-label">
-                收款人：
-            </span>
-            <input type="text" class="flat-input" placeholder="请输入账号">
-            <input type="checkbox" class="pull-right flat-form-checkbox">
-        </div>
-
-        <br>
         <div class="row flat-form-group">
             <span class="flat-form-label">
                 验证码：
             </span>
-            <input type="text" class="flat-input" style="width: 45%" placeholder="输入验证码">
-            <button type="" class="btn btn-default btn-pink">短信验证</button>
-            <span class="glyphicon glyphicon-earphone" style="background: green; color: white; padding: 5px; margin-top: 3px; border-radius: 50%"></span>
+            <input type="text" class="flat-input" placeholder="短信（语音）验证码">
         </div>
 
         <br>
@@ -66,7 +84,8 @@
             <span class="flat-form-label">
                 支付密码：
             </span>
-            <input type="text" class="flat-input" placeholder="支付密码">
+            <input type="text" class="flat-input" placeholder="密码若无，点击密码添加" style="width: 50%;">
+            <button class="btn btn-default btn-grey pull-right">密码添加</button>
         </div>
     </div>
 

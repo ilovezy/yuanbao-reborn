@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
-* @Last Modified by:   fhc
-* @Last Modified time: 2015-11-16 12:03:00
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-11-26 22:58:29
 */
 
 
@@ -18,6 +18,43 @@ a {
 
 .nav-icon a {
     color: white;
+}
+
+.bor-top-1 {
+    border-top: 1px solid #ccc;
+}
+
+.bg-grey {
+    background: #eee;
+}
+
+.nav-tabs li a {
+    color: #4C4949!important;
+}
+
+
+/* 添加提现账户 */
+
+.add-account {
+    padding-top: 10px;
+    height: 57px!important;
+    margin-bottom: 0!important;
+}
+
+.add-account li {
+    width: 50%!important;
+}
+
+.tab-content {
+    padding-top: 0;
+}
+
+
+/* 购物车空白 */
+
+.cart-notice {
+    font-size: 2rem;
+    color: #ccc;
 }
 
 
@@ -66,32 +103,6 @@ body {
 
 
 /* index filter */
-
-.index-filter {
-    background: #919191;
-    display: none;
-}
-
-.index-filter-title,
-.glyphicon {
-    color: white;
-}
-
-.index-filter-card {
-    border-bottom: 1px solid #897D7D;
-    padding-bottom: 1rem;
-}
-
-.index-filter-card .btn {
-    margin-right: 1.5rem;
-    min-width: 6rem;
-}
-
-.index-filter-confirm {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #897D7D;
-}
 
 
 /* 商城-分类 */
@@ -152,12 +163,16 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    background: #ddd;
+    background: white;
+}
+
+.classify-collection-history {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+    color: #aaa;
 }
 
 .classify-collection-item {
-    color: #776D6D;
-    background: #ddd;
     padding: 1rem 2rem;
     border-bottom: 1px solid #ccc;
 }
@@ -456,11 +471,11 @@ body {
 
 .promote-nav .btn-group .btn {
     padding-bottom: 0.5rem;
-    border-color: #4C4949;
+    border-color: #ff6600;
 }
 
 .promote-nav .btn-group .btn.active {
-    background: #4C4949;
+    background: #ff6600;
     color: white;
 }
 
@@ -472,7 +487,7 @@ body {
 }
 
 .promote-card:first-child {
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #ddd;
 }
 
 .promote-card .promote-time {
@@ -836,6 +851,15 @@ body {
     margin-right: 1rem;
 }
 
+.flat-form-confirm {
+    padding-bottom: 5px;
+    color: #aaa
+}
+
+.label-red {
+    background: #ff6349;
+}
+
 .login-form .flat-input {
     padding-top: 0.5em;
     font-size: 1.8rem;
@@ -1007,6 +1031,45 @@ body {
 }
 
 
+/* 内容详情 */
+
+.hongbao-footer {
+    margin-top: 40px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.complex-input-orange {
+    display: inline-block;
+    padding: 0 3px;
+    border: 1px solid #ffae29;
+    border-radius: 4px;
+    background: #ffae29;
+    color: white;
+    height: 34px;
+    line-height: 34px;
+}
+
+.complex-input-green {
+    display: inline-block;
+    padding: 0 3px;
+    border: 1px solid #6ECC66;
+    border-radius: 4px;
+    background: #6ECC66;
+    color: white;
+    height: 34px;
+    line-height: 34px;
+}
+
+.complex-input-num {
+    background: white;
+    color: #aaa;
+    height: 32px;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+
 /* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
 
 .color-pink {
@@ -1033,6 +1096,10 @@ body {
     color: #aaa;
 }
 
+.mt-0 {
+    margin-top: 0!important;
+}
+
 .nav {
     height: 50px;
     line-height: 50px;
@@ -1044,6 +1111,17 @@ body {
     padding-right: 15px;
     overflow: hidden;
     /* clearfix */
+}
+
+.nav-white {
+    background: white;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.nav-white a {
+    background: white;
+    color: black;
 }
 
 .btn-pink,
@@ -1121,6 +1199,19 @@ body {
 
 .form .flat-input:last-child {
     border-bottom: none;
+}
+
+.form .form-group-textarea {
+    height: 100px!important;
+}
+
+.form .flat-textarea {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    border: none;
+    height: 100px;
+    resize: none;
 }
 
 
