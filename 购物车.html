@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
+</head>
+
+<body>
+    <nav class="nav nav-white">
+        <div class="nav-icon pull-left">
+            <a href="购物车.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <span class="nav-title">购物车</span>
+    </nav>
+    <!-- main -->
+
+    <style type="text/css" media="screen">
+    .shopping-cart-top {
+        background: white;
+        padding: 10px 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .shopping-cart-top .glyphicon-map-marker {
+        font-size: 2rem;
+    }
+    
+    .shopping-cart-top a {
+        position: relative;
+        top: -3px;
+    }
+    
+    .shopping-cart-top .glyphicon-menu-right {
+        position: relative;
+        top: 7px;
+    }
+    </style>
+    <div class="container">
+        <!-- 购物车修改框 -->
+        <div class="row">
+            <div class="shopping-cart-top">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                <a href="" class="text-grey">点击进入地址编辑</a>
+                <span class="glyphicon glyphicon-menu-right pull-right text-grey"></span>
+            </div>
+        </div>
+
+        <style>
+        .card-shopping-cart {
+            margin-top: 15px;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding: 10px 15px 0 15px;
+        }
+        
+        .card-shopping-cart input {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            top: -5px;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+        
+        .shopping-cart-head {
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .shopping-cart-head>div {
+            float: left;
+        }
+        
+        .shopping-cart-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+        
+        .shopping-cart-item input[type=radio] {
+            margin-top: 25px;
+        }
+        
+        .shopping-cart-item-icon {
+            float: left;
+            width: 30%;
+        }
+        
+        .shopping-cart-item-icon img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .shopping-cart-item-info {
+            float: left;
+            width: 70%;
+            padding-left: 10px;
+        }
+        
+        .shopping-cart-item-info p {
+            margin-bottom: 0;
+        }
+        </style>
+        <!-- 购物车列表 -->
+        <div class="container card-shopping-cart bg-white">
+
+            <div class="row shopping-cart-head">
+                <div class="col-xs-12">
+                    <div class="pull-left">
+                        <input type="radio">
+                    </div>
+                    <div>商家：
+                        <span class="text-orange">风元轩珠宝店</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row shopping-cart-item">
+                <div class="col-xs-12">
+                    <div class=" shopping-cart-item-body">
+                        <div class="shopping-cart-item-icon">
+                            <input type="radio">
+                            <img src="img/orderForm/item.png">
+                        </div>
+                        <div class="shopping-cart-item-info">
+                            <p>韩国进口巧克力 了天弘
+                                <span class="pull-right">￥120</span>
+                            </p>
+                            <p>加纳巧克力 90g
+                                <span class="pull-right text-orange">银元宝抵用？</span>
+                            </p>
+                            <div>
+                                <div class="shopping-cart-count pull-left">
+                                    <span>-</span>
+                                    <input type="text" class="shopping-cart-count-num">
+                                    <span>+</span>
+                                </div>
+
+                                <span class="pull-right">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
