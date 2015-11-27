@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
-* @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-26 22:58:29
+* @Last Modified by:   fhc
+* @Last Modified time: 2015-11-27 09:07:25
 */
 
 
@@ -1067,6 +1067,51 @@ body {
     height: 32px;
     display: inline-block;
     padding: 0 3px;
+}
+
+
+/* 填写地址*/
+
+.address-card {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px 7px;
+    background: white;
+}
+
+.address-card div {
+    float: left;
+}
+
+.address-card div.address-modification {
+    float: right;
+    margin-top: 22px;
+    color: #aaa;
+}
+
+.address-card div p {
+    margin-bottom: 3px;
+}
+
+.address-card div.address-notify {
+    margin-right: 5px;
+    color: #ff6600;
+}
+
+.address-card div p.shipping-address {
+    font-size: 0.8em;
+}
+
+.footer-new-address {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: white;
+}
+
+.footer-new-address .btn {
+    width: 50%;
 }
 
 
