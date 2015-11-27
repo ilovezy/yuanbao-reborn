@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   fhc
-* @Last Modified time: 2015-11-27 11:49:28
+* @Last Modified time: 2015-11-27 14:51:12
 */
 
 
@@ -1217,6 +1217,115 @@ body {
 .gutter {
     height: 15px;
     background: #eee;
+}
+
+
+/* 购物车 */
+
+.shopping-cart-top {
+    background: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.shopping-cart-top .glyphicon-map-marker {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+}
+
+.shopping-cart-top a {
+    position: relative;
+}
+
+.shopping-cart-top .glyphicon-menu-right {
+    position: relative;
+    top: 7px;
+}
+
+.shopping-cart-edit {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.card-shopping-cart {
+    margin-top: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 15px 0 15px;
+}
+
+.card-shopping-cart input[type="radio"] {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.shopping-cart-head {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-head>div {
+    float: left;
+}
+
+.shopping-cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.shopping-cart-radio {
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 15px!important;
+}
+
+.shopping-cart-body {
+    float: left;
+}
+
+.shopping-cart-body img {
+    float: left;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.shopping-cart-count {
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.shopping-cart-count * {
+    margin: 0;
+    text-align: center;
+}
+
+.shopping-cart-count span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 0;
+}
+
+.shopping-cart-count span:nth-child(1) {
+    border-right: 1px solid #ccc;
+}
+
+.shopping-cart-count span:nth-child(3) {
+    border-left: 1px solid #ccc;
+}
+
+.shopping-cart-count input {
+    margin-left: 0;
+    top: 0px;
+    height: 20px;
+    width: 20px;
+    border: none;
 }
 
 
