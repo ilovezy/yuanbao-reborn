@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
+</head>
+
+<body>
+    <nav class="nav nav-white">
+        <div class="nav-icon pull-left">
+            <a href="我的.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <span class="nav-title">我的订单</span>
+    </nav>
+    <!-- main -->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs account-change" style="margin-bottom: 0;">
+        <li class="active">
+            <a href="#all" data-toggle="tab">全部</a>
+        </li>
+        <li>
+            <a href="#recharge" data-toggle="tab">待付款</a></li>
+        <li>
+            <a href="#withdraw" data-toggle="tab">已付款</a>
+        </li>
+        <li>
+            <a href="#rebate" data-toggle="tab">已配送</a>
+        </li>
+        <li>
+            <a href="#paySuccess" data-toggle="tab">退货/退款</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content tab-content-grey">
+        <div class="tab-pane active" id="all">
+            <div class="container text-center">
+                <img src="img/orderForm.png" class="img-circle">
+                <p class="cart-notice">您的订单还是空的哦</p>
+                <button class="btn btn-default btn-lg btn-pink" style="width: 50%;">
+                    去逛逛
+                </button>
+            </div>
+        </div>
+        <div class="tab-pane" id="recharge">待付款</div>
+        <div class="tab-pane" id="withdraw">已付款</div>
+        <div class="tab-pane" id="rebate">已配送</div>
+        <div class="tab-pane" id="paySuccess">退货/退款</div>
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

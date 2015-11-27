@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   fhc
-* @Last Modified time: 2015-11-27 10:08:29
+* @Last Modified time: 2015-11-27 10:29:00
 */
 
 
@@ -43,10 +43,6 @@ a {
 
 .add-account li {
     width: 50%!important;
-}
-
-.tab-content {
-    padding-top: 0;
 }
 
 
@@ -1024,6 +1020,11 @@ body {
     background: white;
     border-top: 1px solid #ddd;
     padding: 10px 0 0 15px;
+}
+
+.tab-content-grey {
+    padding-top: 80px;
+    background: #f3f3f3;
 }
 
 .tab-pane-card {
