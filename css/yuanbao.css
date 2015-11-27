@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   fhc
-* @Last Modified time: 2015-11-27 09:07:25
+* @Last Modified time: 2015-11-27 10:08:29
 */
 
 
@@ -1034,9 +1034,16 @@ body {
 /* 内容详情 */
 
 .hongbao-footer {
-    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding: 15px;
     border-top: 1px solid #ccc;
+    background: white;
+}
+
+.hongbao-footer-gutter {
+    height: 80px;
 }
 
 .complex-input-orange {
@@ -1067,6 +1074,36 @@ body {
     height: 32px;
     display: inline-block;
     padding: 0 3px;
+}
+
+.comment {
+    border-top: 1px solid #ddd;
+}
+
+.comment .comment-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #428bca;
+    color: white;
+    padding: 2px 15px 0 5px;
+    border-radius: 0 20px 20px 0;
+}
+
+.comment-card {
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.comment-card .comment-username {
+    color: #428bca;
+    margin-bottom: 0;
+}
+
+.comment-card .comment-date {
+    color: #bbb;
+    font-size: 0.8em;
 }
 
 
@@ -1115,6 +1152,19 @@ body {
 }
 
 
+/* 分享 */
+
+.card-share {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.gutter {
+    height: 15px;
+    background: #eee;
+}
+
+
 /* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
 
 .color-pink {
@@ -1139,6 +1189,10 @@ body {
 
 .text-grey {
     color: #aaa;
+}
+
+.text-black {
+    color: black;
 }
 
 .mt-0 {
