@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
-* @Last Modified by:   fhc
-* @Last Modified time: 2015-11-27 14:51:12
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-11-29 02:21:28
 */
 
 
@@ -24,12 +24,120 @@ a {
     border-top: 1px solid #ccc;
 }
 
+.nav-tabs li a {
+    color: #4C4949!important;
+}
+
+
+/* 这里我直接写在 body里了，省一大堆dom, 因为所有的页面底色都为淡灰色 */
+
+body {
+    background: #f3f3f3!important;
+}
+
+.bg-white {
+    background: white;
+}
+
 .bg-grey {
     background: #eee;
 }
 
-.nav-tabs li a {
-    color: #4C4949!important;
+
+/* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
+
+.color-pink {
+    color: #F05CE9;
+}
+
+.color-blue {
+    color: #428bca;
+}
+
+.text-orange {
+    color: #ff6600
+}
+
+.text-pink {
+    color: #ff6349
+}
+
+.text-yellow {
+    color: #ffae29
+}
+
+.text-grey {
+    color: #aaa;
+}
+
+.text-black {
+    color: black;
+}
+
+.mt-0 {
+    margin-top: 0!important;
+}
+
+.nav {
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.8rem;
+    text-align: center;
+    background: #ff6600;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.nav-white {
+    background: white;
+    color: black;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-white a {
+    background: white;
+    color: black;
+}
+
+.btn-pink,
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active:focus,
+.btn-pink.active:focus,
+.btn-pink.focus,
+.btn-pink:active.focus,
+.btn-pink.active.focus {
+    color: white;
+    background: #ff6349!important;
+    border: 1px solid #ff6349!important;
+}
+
+.btn-grey,
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active:focus,
+.btn-grey.active:focus,
+.btn-grey.focus,
+.btn-grey:active.focus,
+.btn-grey.active.focus {
+    color: #428bca;
+    background: #ddd!important;
+    border: 1px solid #ddd!important;
+}
+
+.btn-white,
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active:focus,
+.btn-white.active:focus,
+.btn-white.focus,
+.btn-white:active.focus,
+.btn-white.active.focus {
+    color: #3F3232;
+    background: white!important;
+    border: 1px solid white!important;
 }
 
 
@@ -84,21 +192,32 @@ ul.dropdown-menu {
 }
 
 
-/* 这里我直接写在 body里了，省一大堆dom, 因为所有的页面底色都为淡灰色 */
+/* 首页 */
 
-body {
-    background: #f3f3f3!important;
+.index-filter {
+    background: rgba(145, 145, 145, 0.9);
+    color: white;
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 5px;
 }
 
-.bg-white {
-    background: white;
+.index-filter-card {
+    border-bottom: 1px solid #897D7D;
+    padding-bottom: 1rem;
 }
 
+.index-filter-card .btn {
+    margin-right: 1.5rem;
+    min-width: 6rem;
+}
 
-/* config */
-
-
-/* index filter */
+.index-filter-confirm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #897D7D;
+}
 
 
 /* 商城-分类 */
@@ -108,11 +227,6 @@ body {
     padding-top: 1rem;
     color: #aaa;
     background: white;
-    padding-bottom: 1rem;
-}
-
-.classify-bar ul.dropdown {
-    z-index: 100;
 }
 
 .classify-bar .input-group * {
@@ -147,14 +261,6 @@ body {
     margin-top: 0.7rem;
 }
 
-.classify-panel {
-    background: #aaa;
-}
-
-.classify-panel .btn {
-    margin: 1rem;
-}
-
 .classify-collection {
     margin: 0;
     padding: 0;
@@ -162,15 +268,44 @@ body {
     background: white;
 }
 
-.classify-collection-history {
+.classify-collection>li {
     padding: 1rem 2rem;
     border-bottom: 1px solid #ccc;
-    color: #aaa;
 }
 
-.classify-collection-item {
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #ccc;
+
+/* 搜索的下拉框 */
+
+.selector-content {
+    position: absolute;
+    width: 100%;
+    padding: 15px 0 5px 0;
+    background: rgba(145, 145, 145, 0.9);
+    display: none;
+    z-index: 999;
+}
+
+.selector-content-foot {
+    text-align: center;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin: 15px 0 0 0;
+}
+
+.selector-content-body button {
+    margin: 0 15px;
+}
+
+.close-selector,
+.close-selector:before {
+    display: inline-block;
+    background: white;
+    width: 50px;
+    height: 5px;
+}
+
+.close-selector:before {
+    content: "";
 }
 
 
@@ -1326,104 +1461,6 @@ body {
     height: 20px;
     width: 20px;
     border: none;
-}
-
-
-/* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
-
-.color-pink {
-    color: #F05CE9;
-}
-
-.color-blue {
-    color: #428bca;
-}
-
-.text-orange {
-    color: #ff6600
-}
-
-.text-pink {
-    color: #ff6349
-}
-
-.text-yellow {
-    color: #ffae29
-}
-
-.text-grey {
-    color: #aaa;
-}
-
-.text-black {
-    color: black;
-}
-
-.mt-0 {
-    margin-top: 0!important;
-}
-
-.nav {
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.8rem;
-    text-align: center;
-    background: #ff6600;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow: hidden;
-    /* clearfix */
-}
-
-.nav-white {
-    background: white;
-    color: black;
-    border-bottom: 1px solid #ccc;
-}
-
-.nav-white a {
-    background: white;
-    color: black;
-}
-
-.btn-pink,
-.btn-pink:hover,
-.btn-pink:focus,
-.btn-pink:active:focus,
-.btn-pink.active:focus,
-.btn-pink.focus,
-.btn-pink:active.focus,
-.btn-pink.active.focus {
-    color: white;
-    background: #ff6349!important;
-    border: 1px solid #ff6349!important;
-}
-
-.btn-grey,
-.btn-grey:hover,
-.btn-grey:focus,
-.btn-grey:active:focus,
-.btn-grey.active:focus,
-.btn-grey.focus,
-.btn-grey:active.focus,
-.btn-grey.active.focus {
-    color: #428bca;
-    background: #ddd!important;
-    border: 1px solid #ddd!important;
-}
-
-.btn-white,
-.btn-white:hover,
-.btn-white:focus,
-.btn-white:active:focus,
-.btn-white.active:focus,
-.btn-white.focus,
-.btn-white:active.focus,
-.btn-white.active.focus {
-    color: #3F3232;
-    background: white!important;
-    border: 1px solid white!important;
 }
 
 

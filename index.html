@@ -25,23 +25,17 @@
         <div class="row">
             <div class="col-xs-3">
                 <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" id="dropdownMenu1">
+                    <button class="btn btn-default dropdown-toggle" id="trigger-selector-content">
                         分享
                         <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
                 </div>
             </div>
 
             <div class="col-xs-6">
                 <div class="input-group">
                     <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-search"></span>
+                        <span class="glyphicon glyphicon-search"></span>
                     </span>
                     <input type="text" class="form-control" placeholder="请输入关键字">
                 </div>
@@ -58,57 +52,35 @@
         </div>
     </div>
 
-    <style>
-    .index-filter {
-        background: #919191;
-        display: none;
-    }
-    
-    .index-filter-title,
-    .glyphicon {
-        color: white;
-    }
-    
-    .index-filter-card {
-        border-bottom: 1px solid #897D7D;
-        padding-bottom: 1rem;
-    }
-    
-    .index-filter-card .btn {
-        margin-right: 1.5rem;
-        min-width: 6rem;
-    }
-    
-    .index-filter-confirm {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #897D7D;
-    }
-    </style>
+    <!-- 搜索 -->
+    <div class="selector-content" id="selector-content">
+        <div class="selector-content-body">
+            <button class="btn btn-pink">商品</button>
+            <button class="btn btn-white">商品</button>
+            <button class="btn btn-white">商品</button>
+        </div>
+        <div class="selector-content-foot">
+            <span class="close-selector" id="close-selector"></span>
+        </div>
+    </div>
     <!-- filter -->
     <div class="container index-filter">
         <div class="row">
             <div class="col-xs-12 index-filter-card">
-                <h4 class="index-filter-title">
-                    广告金额
-                </h4>
+                <h4>广告金额</h4>
                 <button class="btn btn-pink">从低到高</button>
                 <button class="btn btn-white">从高到低</button>
             </div>
 
             <div class="col-xs-12 index-filter-card">
-                <h4 class="index-filter-title">
-                    发布时间
-                </h4>
+                <h4>发布时间</h4>
                 <button class="btn btn-pink">不限</button>
                 <button class="btn btn-white">最新发布</button>
                 <button class="btn btn-white">3天内</button>
             </div>
 
             <div class="col-xs-12 index-filter-card">
-                <h4 class="index-filter-title">
-                    有无红包
-                </h4>
+                <h4>有无红包</h4>
                 <button class="btn btn-pink">不限</button>
                 <button class="btn btn-white">有</button>
                 <button class="btn btn-white">无</button>
@@ -119,7 +91,7 @@
             </div>
 
             <div class="text-center">
-                <span class="glyphicon glyphicon-eject btn-filter-confirm"></span>
+                <span class="close-selector" id="close-selector" style="margin: 10px;"></span>
             </div>
         </div>
     </div>
@@ -228,11 +200,13 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-    $('.dropdown-toggle').click(function(event) {
-        $(this).next('ul.dropdown-menu').slideToggle();
+    $('#trigger-selector-content').on('click', function(event) {
+        $('.index-filter').slideUp();
+        $('#selector-content').slideToggle();
     });
 
     $('.btn-filter').on('click', function(event) {
+        $('#selector-content').slideUp();
         $('.index-filter').slideToggle();
     });
 

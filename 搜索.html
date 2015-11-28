@@ -16,14 +16,7 @@
             <div class="col-xs-10">
                 <div class="input-group">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">商品 <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
+                        <button id="toggle-select-content" class="btn btn-default">商品 <span class="caret"></span></button>
                     </div>
                     <input type="text" class="form-control" placeholder="玻璃保温杯">
                 </div>
@@ -32,58 +25,42 @@
         </div>
     </div>
 
-    <div class="container text-center classify-panel">
-        <button class="btn btn-pink">商品</button>
-        <button class="btn btn-white">商品</button>
-        <button class="btn btn-white">商品</button>
+    <div class="selector-content" id="selector-content">
+        <div class="selector-content-body">
+            <button class="btn btn-pink">商品</button>
+            <button class="btn btn-white">商品</button>
+            <button class="btn btn-white">商品</button>
+        </div>
+        <div class="selector-content-foot">
+            <span class="close-selector" id="close-selector"></span>
+        </div>
     </div>
 
     <ul class="classify-collection">
-        <li class="classify-collection-history">
-            历史搜索
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
-        <li class="classify-collection-item">
-            耐克男鞋
-        </li>
+        <li class="text-grey">历史搜索</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
+        <li>耐克男鞋</li>
     </ul>
-
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
-    $('.dropdown-toggle').click(function(event) {
-        $(this).next('ul.dropdown-menu').slideToggle();
+    $('#toggle-select-content').on('click', function() {
+        $('#selector-content').slideToggle();
+    });
+
+    $('#close-selector').on('click', function() {
+        $('#selector-content').slideUp();
     });
     </script>
 </body>
