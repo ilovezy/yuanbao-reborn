@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .zz img {
+        width: 100% !important;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-icon pull-left">
+            <a href="http://yb111.8111.cn:8000/spread/advertisement/detailed?id=20"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <span class="nav-title">首页</span> <span class="pull-right"> <img
+            src="../../img/scan-icon.png" style="width: 2rem;">
+        </span>
+    </nav>
+    <form action="" method="get" id="formid">
+        <div class="container search-bar">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="dropdown">
+                        <!-- 当前页码 -->
+                        <input type="hidden" name="page" id="page" value="" />
+                        <select class="btn btn-default" style="border: none;" name="classify" id="select_id">
+                            <option value='1' selected>不限</option>
+                            <option value='2'>红包</option>
+                            <option value='3'>体验</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="请输入关键字" value="">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search" id="sousuo"> </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-xs-3">
+                    <button class="btn btn-default btn-filter">
+                        筛选 <span class="caret"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- filter   index-filter -->
+        <div class="container index-filter">
+            <div class="row">
+                <div class="col-xs-12 index-filter-card">
+                    <h4 class="index-filter-title">广告金额</h4>
+                    <input type="button" class="btn" id="bonus1" value="不限">
+                    <input type="button" class="btn" id="bonus2" value="从高到低">
+                    <input type="button" class="btn" id="bonus3" value="从低到高">
+                    <input type="hidden" value="" id="bonus_sort" name="bonus_sort">
+                </div>
+
+                <div class="col-xs-12 index-filter-card">
+                    <h4 class="index-filter-title">发布时间</h4>
+                    <input type="button" class="btn" id="issue1" value="不限">
+                    <input type="button" class="btn" id="issue2" value="最新发布">
+                    <input type="button" class="btn" id="issue3" value="3天内">
+                    <input type="hidden" value="" id="issue_sort" name="issue_sort">
+                </div>
+
+                <div class="col-xs-12 index-filter-card">
+                    <h4 class="index-filter-title">有无红包</h4>
+                    <input type="button" class="btn" id="red_packet1" value="不限">
+                    <input type="button" class="btn" id="red_packet2" value="有">
+                    <input type="button" class="btn" id="red_packet3" value="无">
+                    <input type="hidden" value="" id="is_red_packet" name="is_red_packet">
+                </div>
+                <div class="col-xs-12 index-filter-confirm">
+                    <button type="button" id="queren" class="btn btn-lg btn-block btn-pink btn-filter-confirm">确认</button>
+                </div>
+                <!-- 这里换成两个横线 -->
+                <div class="text-center">
+                    <span class="close-selector btn-filter-confirm" id="close-selector"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- 循环开始 -->
+    <div id="insert">
+        <a href="/spread/advertisement/detailed?id=20">
+            <div class="media-card bg-white">
+                <div class="media-card-item">
+                    <div class="media-img">
+                        <img src="http://yb111.8111.cn:8000/./uploads/1448630725565859c5a79bb.png">
+                    </div>
+                    <div class="media-card-content">
+                        <p class="media-card-title">测试1</p>
+                        <p>
+                            <label class="label label-warning">益</label> 最多可获金元宝 <span class="icon-alert">14</span>个 剩余广告包 <span class="icon-alert">8</span>个
+                        </p>
+                        <p>
+                            <label class="label label-danger">益</label> 单次传播广告包获得金元宝 <span class="icon-alert">7</span>个
+                        </p>
+                        <p>
+                            <label class="label label-success">益</label> 剩余红包金元宝 <small class="">(<span class="icon-alert">6.5</span>
+                        个 剩余红包数 <span class="icon-alert">5</span>个)
+                    </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/spread/advertisement/detailed?id=21">
+            <div class="media-card bg-white">
+                <div class="media-card-item">
+                    <div class="media-img">
+                        <img src="http://yb111.8111.cn:8000/./uploads/1448630771565859f3c9b3b.png">
+                    </div>
+                    <div class="media-card-content">
+                        <p class="media-card-title">测试2</p>
+                        <p>
+                            <label class="label label-warning">益</label> 最多可获金元宝 <span class="icon-alert">10</span>个 剩余广告包 <span class="icon-alert">10</span>个
+                        </p>
+                        <p>
+                            <label class="label label-danger">益</label> 单次传播广告包获得金元宝 <span class="icon-alert">2</span>个
+                        </p>
+                        <p>
+                            <label class="label label-success">益</label> 剩余红包金元宝 <small class="">(<span class="icon-alert">46</span>
+                        个 剩余红包数 <span class="icon-alert">46</span>个)
+                    </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/spread/advertisement/detailed?id=33">
+            <div class="media-card bg-white">
+                <div class="media-card-item">
+                    <div class="media-img">
+                        <img src="http://yb111.8111.cn:8000/./uploads/1448857459565bcf7391420.png">
+                    </div>
+                    <div class="media-card-content">
+                        <p class="media-card-title">应用测试</p>
+                        <p>
+                            <label class="label label-warning">益</label> 最多可获金元宝 <span class="icon-alert">6</span>个 剩余广告包 <span class="icon-alert">9</span>个
+                        </p>
+                        <p>
+                            <label class="label label-danger">益</label> 单次传播广告包获得金元宝 <span class="icon-alert">2</span>个
+                        </p>
+                        <p>
+                            <label class="label label-success">益</label> 剩余红包金元宝 <small class="">(<span class="icon-alert">34.2</span>
+                        个 剩余红包数 <span class="icon-alert">18</span>个)
+                    </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/spread/advertisement/detailed?id=23">
+            <div class="media-card bg-white">
+                <div class="media-card-item">
+                    <div class="media-img">
+                        <img src="http://yb111.8111.cn:8000/./uploads/144863081156585a1b44aa2.png">
+                    </div>
+                    <div class="media-card-content">
+                        <p class="media-card-title">广告包 子广告测试</p>
+                        <p>
+                            <label class="label label-warning">益</label> 最多可获金元宝 <span class="icon-alert">4</span>个 剩余广告包 <span class="icon-alert">2</span>个
+                        </p>
+                        <p>
+                            <label class="label label-danger">益</label> 单次传播广告包获得金元宝 <span class="icon-alert">2</span>个
+                        </p>
+                        <p>
+                            <label class="label label-success">益</label> 剩余红包金元宝 <small class="">(<span class="icon-alert">33.2</span>
+                        个 剩余红包数 <span class="icon-alert">19</span>个)
+                    </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/spread/advertisement/detailed?id=32">
+            <div class="media-card bg-white">
+                <div class="media-card-item">
+                    <div class="media-img">
+                        <img src="http://yb111.8111.cn:8000/./uploads/144863086656585a52623a7.png">
+                    </div>
+                    <div class="media-card-content">
+                        <p class="media-card-title">全新测试</p>
+                        <p>
+                            <label class="label label-warning">益</label> 最多可获金元宝 <span class="icon-alert">4</span>个 剩余广告包 <span class="icon-alert">10</span>个
+                        </p>
+                        <p>
+                            <label class="label label-danger">益</label> 单次传播广告包获得金元宝 <span class="icon-alert">2</span>个
+                        </p>
+                        <p>
+                            <label class="label label-success">益</label> 剩余红包金元宝 <small class="">(<span class="icon-alert">35</span>
+                        个 剩余红包数 <span class="icon-alert">20</span>个)
+                    </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/spread/advertisement/detailed?id=19">
+            <div class="media-card bg-white">
+                <div class="media-card-item">
+                    <div class="media-img">
+                        <img src="http://yb111.8111.cn:8000/./uploads/1448630748565859dc6b86d.png">
+                    </div>
+                    <div class="media-card-content">
+                        <p class="media-card-title">测试CEHSHI</p>
+                        <p>
+                            <label class="label label-warning">益</label> 最多可获金元宝 <span class="icon-alert">2</span>个 剩余广告包 <span class="icon-alert">9</span>个
+                        </p>
+                        <p>
+                            <label class="label label-danger">益</label> 单次传播广告包获得金元宝 <span class="icon-alert">1</span>个
+                        </p>
+                        <p>
+                            <label class="label label-success">益</label> 剩余红包金元宝 <small class="">(<span class="icon-alert">13</span>
+                        个 剩余红包数 <span class="icon-alert">13</span>个)
+                    </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <script>
+    $(window).load(function() {
+        //红包
+        var a = 1;
+        $("#red_packet" + a).addClass("btn-pink");
+        $("#is_red_packet").val(a);
+        var b = 2;
+        $("#bonus" + b).addClass("btn-pink");
+        $("#bonus_sort").val(b);
+        var c = 1;
+        $("#issue" + c).addClass("btn-pink");
+        $("#issue_sort").val(c);
+        var p = 1;
+        $("#page").val(p);
+    });
+
+    $(window).bind("scroll", function() {
+        if ($(document).scrollTop() + $(window).height() > $(document).height() - 5) // 接近底部10px
+        {
+            //获得总页数
+            var total_page = 2;
+            //得到当前页数
+            var now_page = parseInt($("#page").val());
+            console.log(now_page);
+            if (now_page < total_page) {
+                //去改变请求下一页
+                $("#page").val(now_page + 1);
+                var biaodan = $("#formid").serialize();
+                $.post("/api/ad/list", biaodan, function(result) {
+                    if (result.status) {
+                        var ss = eval(result.data.list);
+                        var zhuijia = "";
+                        for (var i = 0; i < ss.length; i++) {
+
+                            zhuijia = "<a href='/spread/advertisement/detailed?id=" + ss[i]['id'] + "'><div class='media-card bg-white'><div class='media-card-item'><div class='media-img'><img src='" + ss[i]['image_url'] + "'></div>" +
+                                "<div class='media-card-content'><p class='media-card-title'>" + ss[i]['biaoti'] + "</p><p><label class='label label-warning'>益</label> 最多可获金元宝 <spanclass='icon-alert'>" + ss[i]['max_bonus'] + "</span>个" +
+                                "剩余广告包 <span class='icon-alert'>" + ss[i]['surplus_ad_package_count'] + "</span>个</p><p><label class='label label-danger'>益</label> 单次传播广告包获得金元宝 <span class='icon-alert'>" + ss[i]['share_bonus'] + "</span>个" +
+                                "</p><p><label class='label label-success'>益</label> 剩余红包金元宝 <small>(<span class='icon-alert'>" + ss[i]['surplus_red_packet_money'] + "</span>" +
+                                "个 剩余红包数 <span class='icon-alert'>" + ss[i]['surplus_red_packet_count'] + "</span>个)</small></p></div></div></div></a>";
+                            $("#insert").append(zhuijia);
+                        }
+                    } else {
+                        alert(result.alert);
+                    }
+
+                }, "json");
+            } else {
+                console.log("bnb");
+                //alert("以加载全部数据");
+            }
+
+        }
+    });
+
+    // 确认按钮和两个横线的点击事件合并
+    $('.btn-filter,.btn-filter-confirm').on('click', function(event) {
+        event.preventDefault();
+        $('.index-filter').slideToggle();
+    });
+
+    //搜索框提交搜索, 表单提交
+    $("#sousuo, #queren").click(function() {
+        $("#page").val(1);
+        $("#formid").submit();
+    });
+    //下拉列表选择事件
+    $("#select_id").change(function() {
+        $("#page").val(1);
+        $("#formid").submit();
+    });
+
+    // index-filter里的选择类型按钮点击事件合并到一起
+    $('.index-filter-card .btn').on('click', function(event) {
+        event.preventDefault();
+        var val = $(this).attr('id').substring(5);
+
+        $(this).parent().find('input[type=hidden]').val(val);
+
+        $(this).siblings('.btn').removeClass('btn-pink').end().addClass('btn-pink');
+    });
+    </script>
+    <!-- 循环结束-->
+
+    <!-- footer -->
+    <div class="footer-fit"></div>
+    <div class="container text-center footer">
+        <div class="row">
+            <div class="col-xs-3">
+                <a href="/spread/advertisement/list"> <img src="../../img/footer/shouye.png">
+                    <p>首页</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="/site/crowd/crowd"> <img src="../../img/footer/shequn.png" style="width: 43px;">
+                    <p>社群</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="/site/chain/spreadchain"> <img src="../../img/footer/chuanbolian.png">
+                    <p>传播链</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="/site/system/system"> <img src="../../img/footer/wode.png">
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

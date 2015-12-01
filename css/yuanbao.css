@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-11-29 02:21:28
+* @Last Modified time: 2015-12-01 12:57:55
 */
 
 
@@ -22,6 +22,10 @@ a {
 
 .bor-top-1 {
     border-top: 1px solid #ccc;
+}
+
+.nav-tabs {
+    border-bottom: none;
 }
 
 .nav-tabs li a {
@@ -145,7 +149,7 @@ body {
 
 .add-account {
     padding-top: 10px;
-    height: 57px!important;
+    height: 56px!important;
     margin-bottom: 0!important;
 }
 
@@ -294,6 +298,10 @@ ul.dropdown-menu {
 
 .selector-content-body button {
     margin: 0 15px;
+}
+
+.close-selector {
+    margin: 10px;
 }
 
 .close-selector,
@@ -765,7 +773,7 @@ ul.dropdown-menu {
 .media-card-item {
     border-bottom: 1px solid #ddd;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .media-card-item>div {
@@ -789,15 +797,17 @@ ul.dropdown-menu {
 }
 
 .media-card-title {
-    font-size: 1.8rem!important;
+    font-size: 1.7rem!important;
     font-weight: 600;
     color: black!important;
     margin-top: -3px;
+    margin-bottom: -1px!important;
 }
 
 .media-card-content p {
     font-size: 1.4rem;
     color: #bbb;
+    overflow: hidden;
     margin-bottom: 1px;
 }
 
@@ -1154,7 +1164,6 @@ ul.dropdown-menu {
 .tab-content {
     background: white;
     border-top: 1px solid #ddd;
-    padding: 10px 0 0 15px;
 }
 
 .tab-content-grey {
@@ -1543,7 +1552,6 @@ ul.dropdown-menu {
 
 .flat-form-group {
     background: white;
-    padding: 10px 15px;
     overflow: hidden;
     border-bottom: 1px solid #ddd;
 }
@@ -1568,6 +1576,11 @@ ul.dropdown-menu {
     display: inline-block;
     position: relative;
     top: 3px;
+}
+
+.flat-form-group {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
 }
 
 .flat-form-group .flat-input {

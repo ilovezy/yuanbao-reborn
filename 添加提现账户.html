@@ -31,52 +31,58 @@
     </ul>
 
     <!-- Tab panes -->
-
     <div class="tab-content">
         <div class="tab-pane" id="toZhiFuBao">
-            <div class="row flat-form-group">
-                <span class="flat-form-label">
-                提取金额：
-            </span>
-                <input type="text" class="flat-input" style="width: 70%" placeholder="请输入支付宝账号">
+            <div class="container">
+                <div class="row flat-form-group">
+                    <div class="col-xs-12">
+                        <span class="flat-form-label">提取金额：</span>
+                        <input type="text" class="flat-input" style="width: 70%" placeholder="请输入支付宝账号">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="tab-pane active" id="toBankCard">
-            <div class="row flat-form-group">
-                <span class="flat-form-label">姓名：</span>
-                <input type="text" class="flat-input" placeholder="请输入您的姓名">
-            </div>
-            <div class="row flat-form-group">
-                <span class="flat-form-label">卡号：</span>
-                <input type="text" class="flat-input" placeholder="请输入银行卡号">
-            </div>
-            <div class="row flat-form-group">
-                <span class="flat-form-label">开户银行：</span>
-                <input type="text" class="flat-input" placeholder="格式-XX银行XXX支行">
-            </div>
-
-            <div class="row flat-form-confirm bg-grey">
-                <br>
-                <div class="col-xs-6">
-                    <label>短信验证码：</label>
-                    <span class="label label-red">
-                    获取
-                </span>
+            <div class="container">
+                <div class="row flat-form-group">
+                    <div class="col-xs-12">
+                        <span class="flat-form-label">姓名：</span>
+                        <input type="text" class="flat-input" placeholder="请输入您的姓名">
+                    </div>
+                </div>
+                <div class="row flat-form-group">
+                    <div class="col-xs-12">
+                        <span class="flat-form-label">卡号：</span>
+                        <input type="text" class="flat-input" placeholder="请输入银行卡号">
+                    </div>
+                </div>
+                <div class="row flat-form-group">
+                    <div class="col-xs-12">
+                        <span class="flat-form-label">开户银行：</span>
+                        <input type="text" class="flat-input" placeholder="格式-XX银行XXX支行">
+                    </div>
                 </div>
 
-                <div class="col-xs-6">
-                    <label>语音验证码：</label>
-                    <span class="label label-red">
-                    获取
-                </span>
+                <div class="row flat-form-confirm bg-grey">
+                    <br>
+                    <div class="col-xs-6">
+                        <label>短信验证码：</label>
+                        <span class="label label-red">获取</span>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <label>语音验证码：</label>
+                        <span class="label label-red">获取</span>
+                    </div>
+                </div>
+
+                <div class="row flat-form-group" style="border-top: 1px solid #ccc">
+                    <div class="col-xs-12">
+                        <span class="flat-form-label">验证码：</span>
+                        <input type="text" class="flat-input" placeholder="短信（语音）验证码">
+                    </div>
                 </div>
             </div>
-
-            <div class="row flat-form-group" style="border-top: 1px solid #ccc">
-                <span class="flat-form-label">验证码：</span>
-                <input type="text" class="flat-input" placeholder="短信（语音）验证码">
-            </div>
-
         </div>
     </div>
 
@@ -88,7 +94,8 @@
         </button>
     </div>
 
-
+    <br>
+    <br>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
