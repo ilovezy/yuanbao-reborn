@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 13:13:13
+* @Last Modified time: 2015-12-03 13:29:30
 */
 
 
@@ -146,12 +146,6 @@ body {
 
 
 /* 添加提现账户 */
-
-.add-account {
-    padding-top: 10px;
-    height: 56px!important;
-    margin-bottom: 0!important;
-}
 
 .add-account li {
     width: 50%!important;
@@ -411,14 +405,10 @@ ul.dropdown-menu {
     height: 45px;
 }
 
-.userAccount-main {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
 
 /* 个人信息*/
 
+.userAccount-main,
 .userInfo-main {
     border-top: 1px solid #ddd;
 }
@@ -872,7 +862,6 @@ ul.dropdown-menu {
     background: #ed4930;
     color: white;
     padding: 2rem;
-    border-top: 2px solid #ddd;
 }
 
 .well-red-title {
@@ -917,6 +906,7 @@ ul.dropdown-menu {
 .well-grey {
     background: #eee;
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 
 .well-grey-item {
@@ -955,7 +945,6 @@ ul.dropdown-menu {
 
 .cc-btn-group .btn-pink {
     float: left;
-    -webkit-border-radius: 0;
     border-radius: 0;
 }
 
