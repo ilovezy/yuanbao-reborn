@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 20:46:48
+* @Last Modified time: 2015-12-03 22:46:08
 */
 
 
@@ -40,11 +40,11 @@ body {
 }
 
 .bg-white {
-    background: white;
+    background: white!important;
 }
 
 .bg-grey {
-    background: #eee;
+    background: #eee!important;
 }
 
 
@@ -82,6 +82,11 @@ body {
     font-size: 1.6rem;
 }
 
+.text-lg {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
 .bt-0 {
     border-top: none!important;
 }
@@ -108,6 +113,23 @@ body {
 
 .mt-0 {
     margin-top: 0!important;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mb-0 {
+    margin-bottom: 0!important;
+}
+
+.mr-2r {
+    margin-right: 2rem;
+}
+
+.text-delete {
+    font-size: 1.5rem;
+    text-decoration: line-through;
 }
 
 .nav {
@@ -170,6 +192,149 @@ body {
     color: #3F3232;
     background: white!important;
     border: 1px solid white!important;
+}
+
+.btn-orange-ghost {
+    border: 1px solid #ff6349;
+    color: #FF6349;
+    background: white;
+    position: relative;
+    top: -3px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+/* 店铺 */
+
+
+/* 店铺轮播图的 */
+
+.shop-slider {
+    background: white;
+    padding: 1rem;
+}
+
+#owl-carousel .item img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.shop-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.shop-img {
+    position: relative;
+    border-radius: 4px;
+}
+
+.shop-img img {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.shop-img-mask {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    background: rgba(49, 43, 43, 0.7);
+}
+
+.btn-two-level {
+    border: 1px solid #ff6349;
+    color: #ff6349;
+    display: inline-block;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.btn-two-level span {
+    display: block;
+}
+
+.btn-two-level span:nth-child(1) {
+    background: white;
+    padding: 3px 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+.btn-two-level span:nth-child(2) {
+    background: #ff6349;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 0 0 4px 4px;
+}
+
+
+/* 商品 */
+
+.good-card-main {
+    position: relative;
+}
+
+.good-card-title {
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+}
+
+.circle-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #7A7474;
+    color: #eee;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.good-card-mask {
+    font-size: 3rem;
+    text-align: center;
+    background: rgba(49, 43, 43, 0.7);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.good-info {
+    border-top: 1px solid #ddd;
+}
+
+.good-info-title,
+.good-info-foot {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: white;
+}
+
+.good-info-foot .glyphicon {
+    margin-right: 1rem;
+}
+
+.good-card-content-foot {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 15px;
 }
 
 
@@ -835,6 +1000,7 @@ ul.dropdown-menu {
 .com-card-title hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-top: 1px solid #bbb;
 }
 
 .com-card-title span {

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>店铺</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
+</head>
+
+<body>
+    <nav class="nav nav-white">
+        <div class="nav-icon pull-left">
+            <a href="我的.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <span class="nav-title">风源轩珠宝店</span>
+    </nav>
+
+    <div class="shop-slider">
+        <div id="owl-carousel">
+            <div class="item"><img src="img/qiang.png"></div>
+            <div class="item"><img src="img/qiang-2.png"></div>
+            <div class="item"><img src="img/qiang-3.png"></div>
+            <div class="item"><img src="img/qiang-2.png"></div>
+            <div class="item"><img src="img/qiang.png"></div>
+            <div class="item"><img src="img/qiang.png"></div>
+            <div class="item"><img src="img/qiang.png"></div>
+        </div>
+    </div>
+
+    <div class="container bg-grey">
+        <div class="com-card">
+            <div class="com-card-title text-orange mb-0">
+                <hr>
+                <span class="bg-grey">商品</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row shop-item">
+            <div class="col-xs-5">
+                <div class="shop-img">
+                    <img src="img/qiang.png">
+                    <div class="shop-img-mask ">已抢完</div>
+                </div>
+            </div>
+            <div class="col-xs-7 pl-0">
+                <h4>韩国巧克力 乐天红加纳巧克力</h4>
+                <div>
+                    <div class="pull-left mt-15">
+                        <span class="f-lg text-orange ">$120</span>
+                        <div class="text-delete text-grey ">
+                            $300
+                        </div>
+                    </div>
+
+                    <div class="pull-right">
+                        <button class="btn-two-level">
+                            <span>银元宝抵押？</span>
+                            <span>去抢购</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row shop-item">
+            <div class="col-xs-5">
+                <div class="shop-img">
+                    <img src="img/qiang.png">
+                    <div class="shop-img-mask ">已抢完</div>
+                </div>
+            </div>
+            <div class="col-xs-7 pl-0">
+                <h4>韩国巧克力 乐天红加纳巧克力</h4>
+                <div>
+                    <div class="pull-left mt-15">
+                        <span class="f-lg text-orange ">$120</span>
+                        <div class="text-delete text-grey ">
+                            $300
+                        </div>
+                    </div>
+
+                    <div class="pull-right">
+                        <button class="btn-two-level">
+                            <span>银元宝抵押？</span>
+                            <span>去抢购</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row shop-item">
+            <div class="col-xs-5">
+                <div class="shop-img">
+                    <img src="img/qiang.png">
+                    <div class="shop-img-mask ">已抢完</div>
+                </div>
+            </div>
+            <div class="col-xs-7 pl-0">
+                <h4>韩国巧克力 乐天红加纳巧克力</h4>
+                <div>
+                    <div class="pull-left mt-15">
+                        <span class="f-lg text-orange ">$120</span>
+                        <div class="text-delete text-grey ">
+                            $300
+                        </div>
+                    </div>
+
+                    <div class="pull-right">
+                        <button class="btn-two-level">
+                            <span>银元宝抵押？</span>
+                            <span>去抢购</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#owl-carousel").owlCarousel({
+            // autoPlay: 3000, //Set AutoPlay to 3 seconds
+            items: 4,
+            // itemsDesktop: [1199, 1],
+            // itemsDesktopSmall: [300, 3]
+            itemsTablet: [600, 2], //2 items between 600 and 0
+            itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
+        });
+    });
+    </script>
+</body>
+
+</html>
