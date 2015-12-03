@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 13:45:54
+* @Last Modified time: 2015-12-03 14:49:09
 */
 
 
@@ -157,6 +157,11 @@ body {
 .cart-notice {
     font-size: 2rem;
     color: #ccc;
+}
+
+.shopping-cart-right {
+    float: right;
+    font-size: 2rem!important;
 }
 
 
