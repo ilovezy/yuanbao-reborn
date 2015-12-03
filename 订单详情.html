@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>购物车详情</title>
+    <title>订单详情</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
 </head>
@@ -13,14 +13,13 @@
 <body>
     <nav class="nav nav-white">
         <div class="nav-icon pull-left">
-            <a href="购物车.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+            <a href="我的订单.html"><span class="glyphicon glyphicon-menu-left"></span></a>
         </div>
-        <span class="nav-title">购物车详情</span>
+        <span class="nav-title">订单详情</span>
     </nav>
     <!-- main -->
 
-    <div class="container-fluid">
-        <!-- 购物车修改框 -->
+    <div class="container">
         <div class="row">
             <div class="shopping-cart-top">
                 <span class="glyphicon glyphicon-map-marker"></span>
@@ -32,75 +31,22 @@
                 <span class="glyphicon glyphicon-menu-right pull-right text-grey"></span>
             </div>
         </div>
+    </div>
 
-        <!-- 购物车列表 -->
-        <div class="container card-shopping-cart bg-white">
-
-            <div class="row shopping-cart-head">
-                <div class="col-xs-12">
-                    <div class="pull-left">
-                        <input type="radio">
-                    </div>
-                    <div>商家：
-                        <span class="text-orange">风元轩珠宝店</span>
-                    </div>
-                </div>
+    <div class="card-order card-info">
+        <div class="card-order-body bt-0">
+            <div class="card-item-img">
+                <img src="img/orderForm/item.png">
             </div>
-
-            <div class="row shopping-cart-item">
-                <div class="col-xs-12">
-                    <input type="radio" class="shopping-cart-radio">
-                    <div class="shopping-cart-body">
-                        <img src="img/orderForm/item.png">
-                        <div class="shopping-cart-info  pull-left">
-                            <div>韩国进口巧克力 乐天虹</div>
-                            <div> 乐天虹</div>
-                            <div class="shopping-cart-count">
-                                <span>-</span>
-                                <input type="text" value="1">
-                                <span>+</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="shopping-cart-right pull-right text-right">
-                        <div class="text-orange">$120</div>
-                        <div class="text-yellow" style="margin-right: -6px">银元宝抵用？</div>
-                        <div class="text-grey">
-                            <span class="glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-item-info">
+                <p>韩国进口巧克力 乐天虹</p>
+                <p>加纳巧克力90g</p>
+                <p class="text-grey"> <span>原价：300.00</span> <span>优惠价：120.00</span> </p>
+                <p class="text-grey">银元宝抵用？</p>
             </div>
-
-            <div class="row shopping-cart-item">
-                <div class="col-xs-12">
-                    <input type="radio" class="shopping-cart-radio">
-                    <div class="shopping-cart-body">
-                        <img src="img/orderForm/item.png">
-                        <div class="shopping-cart-info  pull-left">
-                            <div>韩国进口巧克力 乐天虹</div>
-                            <div> 乐天虹</div>
-                            <div class="shopping-cart-count">
-                                <span>-</span>
-                                <input type="text" value="1">
-                                <span>+</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="shopping-cart-right pull-right text-right">
-                        <div class="text-orange">$120</div>
-                        <div class="text-yellow" style="margin-right: -6px">银元宝抵用？</div>
-                        <div class="text-grey">
-                            <span class="glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
+        </div>
+        <div class="card-order-foot">
+            <span>合计：120.00元</span>
         </div>
     </div>
 
