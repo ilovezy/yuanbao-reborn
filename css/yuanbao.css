@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 14:49:09
+* @Last Modified time: 2015-12-03 20:20:01
 */
 
 
@@ -78,6 +78,22 @@ body {
     color: black;
 }
 
+.f-lg {
+    font-size: 1.6rem;
+}
+
+.bt-1 {
+    border-top: 1px solid #ddd;
+}
+
+.pl-0 {
+    padding-left: 0!important;
+}
+
+.pr-0 {
+    padding-right: 0!important;
+}
+
 .mt-0 {
     margin-top: 0!important;
 }
@@ -142,6 +158,61 @@ body {
     color: #3F3232;
     background: white!important;
     border: 1px solid white!important;
+}
+
+
+/* 最新消息 */
+
+.label-lg {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 4px;
+    color: white;
+}
+
+.label-green {
+    background: #7EE86A;
+}
+
+.label-blue {
+    background: #36EFF1;
+}
+
+.label-red {
+    background: #ff6349;
+}
+
+.label-orange {
+    background: #ffae29;
+}
+
+.with-label {
+    padding-top: 1rem!important;
+    padding-bottom: 0.5rem;
+}
+
+
+/* 合作伙伴 */
+
+.partener-gutter {
+    background: #eee;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.partener-gutter-left {
+    line-height: 30px;
+}
+
+.btn-noborder {
+    border: none;
+}
+
+.partener-date-content {
+    border-left: 1px solid #ddd;
 }
 
 
@@ -1347,7 +1418,7 @@ ul.dropdown-menu {
 
 .gutter {
     height: 15px;
-    background: #eee;
+    background: #f3f3f3;
 }
 
 
@@ -1477,8 +1548,15 @@ ul.dropdown-menu {
     padding-left: 15px;
     padding-right: 15px;
     background: white;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.flat-input-group {
+    padding: 15px 0;
+    background: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .form .flat-input {
@@ -1488,7 +1566,7 @@ ul.dropdown-menu {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     height: 50px;
     line-height: 50px;
 }
@@ -1514,7 +1592,7 @@ ul.dropdown-menu {
 /* 找回密码 */
 
 .form-group {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     height: 50px;
     line-height: 50px;
     font-size: 1.6rem;
