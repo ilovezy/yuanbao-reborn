@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 13:04:06
+* @Last Modified time: 2015-12-03 13:13:13
 */
 
 
@@ -719,11 +719,13 @@ ul.dropdown-menu {
 .search-bar .col-xs-5 {
     padding-left: 0!important;
     padding-right: 0!important;
-    margin-left: -2px;
+}
+
+.search-bar .input-group {
     margin-top: -2px;
 }
 
-.search-bar button,
+.search-bar .btn,
 .search-bar .input-group * {
     border: none;
 }
@@ -1556,7 +1558,6 @@ ul.dropdown-menu {
     line-height: 34px;
     height: 34px;
     font-size: 1.8rem;
-    float: left;
 }
 
 .flat-form-avatar {
@@ -1580,7 +1581,6 @@ ul.dropdown-menu {
 }
 
 .flat-form-group .flat-input {
-    float: left;
     border: none;
     height: 34px;
     line-height: 34px;
