@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 13:29:30
+* @Last Modified time: 2015-12-03 13:45:54
 */
 
 
@@ -595,11 +595,10 @@ ul.dropdown-menu {
 }
 
 .promote-nav .btn-group {
-    margin: 0 auto;
+    padding-top: 3px;
 }
 
 .promote-nav .btn-group .btn {
-    padding-bottom: 0.5rem;
     border-color: #ff6600;
 }
 
@@ -610,13 +609,9 @@ ul.dropdown-menu {
 
 .promote-card {
     background: white;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-.promote-card:first-child {
-    border-top: 2px solid #ddd;
 }
 
 .promote-card .promote-time {
@@ -652,7 +647,7 @@ ul.dropdown-menu {
     padding: 0.1rem 0.3rem;
     font-size: 1.6rem;
     color: #aaa;
-    border: 1px solid #4C4949;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
@@ -667,7 +662,7 @@ ul.dropdown-menu {
 
 .promote-user {
     height: 55px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 1rem;
     overflow: hidden;
     margin-left: 1.5rem;
@@ -675,7 +670,7 @@ ul.dropdown-menu {
 }
 
 .promote-user .col-xs-3 {
-    margin-left: -2rem;
+    margin-left: -1rem;
     margin-right: 0;
 }
 
