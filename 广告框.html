@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="元宝网，元宝传媒">
+    <title>广告包详情</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/global/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/yuanbao.css">
+    <script src="../../assets/global/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../assets/global/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .zz img {
+        width: 100% !important;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-icon pull-left">
+            <a href=""><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <span class="nav-title">广告包详情</span> <span class="pull-right"> <img
+            src="../../img/scan-icon.png" style="width: 2rem;">
+        </span>
+    </nav>
+
+    <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+
+    <div class="container">
+        <div class="row">
+            <h2>
+            <center>广告包 子广告测试</center>
+        </h2>
+        </div>
+        <input type="hidden" id="type_id" value="23">
+        <div class="row">
+            <div class="col-xs-6">
+                2015/12/04</br> 05:12:25 </br>
+                元宝网
+            </div>
+            <div class="col-xs-6">
+                <a type="button">分享</a> <a type="button">更多广告</a>
+                <!--MOB SHARE BEGIN-->
+                <div class="-mob-share-ui-button -mob-share-open" id="share_id">分享</div>
+                <div class="-mob-share-ui" style="display: none">
+                    <ul class="-mob-share-list">
+                        <li class="-mob-share-weibo">
+                            <p>新浪微博</p>
+                        </li>
+                        <li class="-mob-share-tencentweibo">
+                            <p>腾讯微博</p>
+                        </li>
+                        <li class="-mob-share-qzone">
+                            <p>QQ空间</p>
+                        </li>
+                        <li class="-mob-share-qq">
+                            <p>QQ好友</p>
+                        </li>
+                        <li class="-mob-share-weixin">
+                            <p>微信</p>
+                        </li>
+                        <li class="-mob-share-douban">
+                            <p>豆瓣</p>
+                        </li>
+                        <li class="-mob-share-renren">
+                            <p>人人网</p>
+                        </li>
+                        <li class="-mob-share-kaixin">
+                            <p>开心网</p>
+                        </li>
+                        <li class="-mob-share-facebook">
+                            <p>Facebook</p>
+                        </li>
+                        <li class="-mob-share-twitter">
+                            <p>Twitter</p>
+                        </li>
+                        <li class="-mob-share-pocket">
+                            <p>Pocket</p>
+                        </li>
+                        <li class="-mob-share-google">
+                            <p>Google+</p>
+                        </li>
+                        <li class="-mob-share-youdao">
+                            <p>有道云笔记</p>
+                        </li>
+                        <li class="-mob-share-mingdao">
+                            <p>明道</p>
+                        </li>
+                        <li class="-mob-share-pengyou">
+                            <p>朋友网</p>
+                        </li>
+                        <li class="-mob-share-tumblr">
+                            <p>Tumblr</p>
+                        </li>
+                        <li class="-mob-share-instapaper">
+                            <p>Instapaper</p>
+                        </li>
+                        <li class="-mob-share-linkedin">
+                            <p>LinkedIn</p>
+                        </li>
+                    </ul>
+                    <div class="-mob-share-close">取消</div>
+                </div>
+                <div class="-mob-share-ui-bg"></div>
+
+                <script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=c747697e7de0"></script>
+                <script>
+                var ad_id = "23";
+                var key_id = "";
+                var url_u = "http://new.8111.cn/spread/advertisement/detailed?id=" + ad_id + "&key_id=" + key_id;
+
+                mobShare.config({
+
+                    debug: true, // 开启调试，将在浏览器的控制台输出调试信息
+
+                    appkey: '', // appkey
+
+                    params: {
+                        url: url_u, // 分享链接
+                        title: '看看小陈', // 分享标题
+                        description: '小陈是王八蛋', // 分享内容
+                        pic: 'http://www.larryullman.com/forums/public/style_images/larry_ullman/profile/default_large.png', // 分享图片，使用逗号,隔开
+                    },
+
+                    /**
+                     * 分享时触发的回调函数
+                     * 分享是否成功，目前第三方平台并没有相关接口，因此无法知道分享结果
+                     * 所以此函数只会提供分享时的相关信息
+                     *
+                     */
+                    callback: function(plat, params) {
+                        $.post("/spread/advertisement/share", {
+                            "ad_id": ad_id,
+                            "key_id": key_id
+                        }, function(result) {}, "json");
+
+                    }
+
+                });
+                </script>
+                <!--MOB SHARE END-->
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 zz">
+                <p>测试一下</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>
+                <center>abc子广告1</center>
+            </h2>
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div class="col-xs-12 zz">
+                <a href='javascript:sonad(17,"")'><img src="http://new.8111.cn./uploads/144863081156585a1b483da.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>
+                <center>abc子广告2</center>
+            </h2>
+        </div>
+    </div>
+    </br>
+    <div class="row">
+        <div class="col-xs-12 zz">
+            <a href='javascript:sonad(21,"")'><img src="http://new.8111.cn./uploads/144863081156585a1b487ab.png"></a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- 抢红包 -->
+    <a class="ui-grab-redenvelope" id="rob_red_packet" style="position: fixed; left: 3rem; bottom: 10rem; z-index: 99; width: 5rem; height: 5.7rem;">
+        <img src="http://scv2.8111.cn/images/envelope.png">
+    </a>
+    <!-- 抢红包 end -->
+    </div>
+
+    <script>
+    $(function() {
+        var username = "";
+        if (username == null || username == '') {
+            alert('没有登录，没有得到阅读者奖金 请先登录');
+        }
+
+        $("#share_id").click(function() {
+            if (username == null || username == '') {
+                alert('登录后再分享会得到更多奖金');
+            }
+        });
+
+        //抢红包
+        $("#rob_red_packet").click(function() {
+            var a = $("#type_id").val();
+            //alert(a);
+            $.post("/spread/advertisement/rodredpacket", {
+                "id": a
+            }, function(result) {
+                if (result.status) {
+                    alert(result.alert);
+                    location.reload();
+                } else {
+                    alert(result.alert);
+                }
+
+            }, "json");
+        });
+    });
+
+    function sonad(sonid, sonurl) {
+        //ajax 实现点击子广告的逻辑
+        $.post("/spread/advertisement/sonadread", {
+            "zad_id": sonid
+        }, function(result) {
+            /* if(result.status){
+                alert(result.alert);
+                }else{
+                    alert(result.alert);
+                } */
+
+        }, "json");
+
+        //实现页面跳转
+        location.href = "http://" + sonurl;
+    }
+    </script>
+
+
+    <!-- footer -->
+    <div class="footer-fit"></div>
+    <div class="container text-center footer">
+        <div class="row">
+            <div class="col-xs-3">
+                <a href="/spread/advertisement/list"> <img src="../../img/footer/shouye.png">
+                    <p>首页</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="/site/crowd/crowd"> <img src="../../img/footer/shequn.png" style="width: 43px;">
+                    <p>社群</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="/site/chain/spreadchain"> <img src="../../img/footer/chuanbolian.png">
+                    <p>传播链</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="/site/system/system"> <img src="../../img/footer/wode.png">
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

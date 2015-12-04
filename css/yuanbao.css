@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-03 22:46:08
+* @Last Modified time: 2015-12-04 23:45:30
 */
 
 
@@ -121,6 +121,18 @@ body {
 
 .mb-0 {
     margin-bottom: 0!important;
+}
+
+.ml-1r {
+    margin-left: 1rem;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-1r {
+    margin-right: 1rem;
 }
 
 .mr-2r {
@@ -1636,9 +1648,6 @@ ul.dropdown-menu {
 
 .card-shopping-cart {
     margin-top: 15px;
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 10px 15px 0 15px;
     background: white;
 }
 
@@ -1651,39 +1660,39 @@ ul.dropdown-menu {
     margin-right: 1rem;
 }
 
-.shopping-cart-head {
-    border-bottom: 1px solid #ccc;
-}
-
-.shopping-cart-head>div {
-    float: left;
+.shopping-cart-shop {
+    border-top: 1px solid #ddd;
+    background: white;
 }
 
 .shopping-cart-item {
-    border-bottom: 1px solid #ccc;
-    padding: 15px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    min-height: 100px;
+    overflow: hidden;
 }
 
-.shopping-cart-radio {
-    float: left;
-    display: inline-block;
-    position: relative;
-    top: 15px!important;
+.shopping-cart-item .shopping-cart-item-info {
+    max-width: 40%;
+    overflow: hidden;
 }
 
-.shopping-cart-body {
-    float: left;
+.shopping-cart-item .text-yellow {
+    margin-right: -0.5rem;
 }
 
-.shopping-cart-body img {
-    float: left;
-    width: 60px;
-    margin-right: 10px;
+.shopping-cart-item .glyphicon-trash {
+    margin-top: 15px;
+    font-size: 2rem;
 }
 
 .shopping-cart-count {
     border: 1px solid #ccc;
     display: inline-block;
+    margin-top: 14px;
 }
 
 .shopping-cart-count * {
@@ -1693,8 +1702,8 @@ ul.dropdown-menu {
 
 .shopping-cart-count span {
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     margin-right: 0;
 }
 
@@ -1704,6 +1713,7 @@ ul.dropdown-menu {
 
 .shopping-cart-count span:nth-child(3) {
     border-left: 1px solid #ccc;
+    color: #ffae29;
 }
 
 .shopping-cart-count input {
@@ -1712,6 +1722,24 @@ ul.dropdown-menu {
     height: 20px;
     width: 20px;
     border: none;
+}
+
+.shopping-cart-foot {
+    background: white;
+    padding: 10px 15px 5px 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.shopping-cart-foot .checkbox {
+    margin-top: 8px;
+}
+
+.shopping-cart-foot input {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
 }
 
 
@@ -1778,7 +1806,7 @@ ul.dropdown-menu {
 .form-group {
     border-bottom: 1px solid #ddd;
     height: 50px;
-    line-height: 50px;
+    /*line-height: 50px;*/
     font-size: 1.6rem;
     margin-bottom: 0;
 }

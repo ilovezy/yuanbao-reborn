@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">test</h1>
+
+        <style type="text/css">
+        .cc-title {
+            height: 50px;
+        }
+        
+        .cc-title-label {
+            background: white;
+            z-index: 999;
+            font-size: 2rem;
+            position: absolute;
+            padding-right: 15px;
+        }
+        
+        .line {
+            position: absolute;
+            border-top: 1px solid black;
+            width: 100%;
+            top: 15px;
+        }
+        </style>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="cc-title">
+                    <span class="cc-title-label">hello</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cc-panel">
+            <div class="col-xs-2 text-center"> hello </div>
+            <div class="col-xs-2 text-center"> hello </div>
+            <div class="col-xs-2 text-center"> hello </div>
+            <div class="col-xs-2 text-center"> hello </div>
+            <div class="col-xs-2 text-center"> hello </div>
+            <div class="col-xs-2 text-center"> hello </div>
+        </div>
+
+        <div class="checkbox">
+            <label style="margin-right: 30px;">
+                <input type="checkbox"> check
+            </label>
+
+            <label>
+                <input type="checkbox"> check
+            </label>
+        </div>
+
+
+        <style type="text/css">
+        /**
+ * Checkbox Four
+ */
+        
+        .checkboxFour {
+            width: 40px;
+            height: 40px;
+            background: #ddd;
+            margin: 20px 90px;
+            border-radius: 100%;
+            position: relative;
+            -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .checkboxFour label {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            transition: all .5s ease;
+            cursor: pointer;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 1;
+            background: #333;
+            -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        /**
+ * Create the checked state
+ */
+        
+        .checkboxFour input[type=checkbox]:checked + label {
+            background: #26ca28;
+        }
+        </style>
+        <div class="checkboxFour">
+            <input type="checkbox" value="1" id="checkboxFourInput" name="" />
+            <label for="checkboxFourInput"></label>
+        </div>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="bower_components/angular/angular.min.js"></script> -->
+    <script>
+    </script>
+</body>
+
+</html>
