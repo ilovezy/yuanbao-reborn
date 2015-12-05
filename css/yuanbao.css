@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-04 23:45:30
+* @Last Modified time: 2015-12-05 14:48:59
 */
 
 
@@ -1513,12 +1513,17 @@ ul.dropdown-menu {
     padding: 0!important;
 }
 
-.all-order-form {
-    background: #f3f3f3!important;
-    padding-top: 15px;
+.card-logistics {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
 }
 
-.tab-order-form .card-order {
+.all-order-form {
+    background: #f3f3f3!important;
+}
+
+.card-order {
     margin-bottom: 15px;
     background: white;
     overflow: hidden;
@@ -1556,6 +1561,78 @@ ul.dropdown-menu {
 .card-order .card-order-foot .glyphicon {
     font-size: 2rem;
     margin-left: 5px;
+}
+
+
+/* 物流详情的步骤图 */
+
+
+/* 及得最后一个要加 lagistics-label-last */
+
+.card-logistics-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+}
+
+.card-logistics-info-item {
+    height: 80px;
+    overflow: hidden;
+}
+
+.logistics-label {
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.logistics-label:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 2px;
+    margin-left: 9px;
+    height: 80px;
+    background: #ddd;
+}
+
+.logistics-label.active {
+    width: 20px;
+    height: 20px;
+    background: green;
+    border-radius: 50%;
+}
+
+.logistics-label.active:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 2px;
+    margin-left: 9px;
+    height: 80px;
+    background: green;
+}
+
+.logistics-label {
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.logistics-label:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 2px;
+    margin-left: 9px;
+    height: 80px;
+    background: #ddd;
+}
+
+.logistics-label.logistics-label-last:after {
+    content: none;
 }
 
 
@@ -1670,7 +1747,6 @@ ul.dropdown-menu {
     padding-bottom: 10px;
     background: white;
     border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     min-height: 100px;
     overflow: hidden;
 }
@@ -1692,7 +1768,6 @@ ul.dropdown-menu {
 .shopping-cart-count {
     border: 1px solid #ccc;
     display: inline-block;
-    margin-top: 14px;
 }
 
 .shopping-cart-count * {
@@ -1704,6 +1779,7 @@ ul.dropdown-menu {
     display: inline-block;
     height: 24px;
     width: 24px;
+    line-height: 24px;
     margin-right: 0;
 }
 
