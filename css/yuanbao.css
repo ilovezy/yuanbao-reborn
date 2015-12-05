@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-05 14:48:59
+* @Last Modified time: 2015-12-05 15:46:14
 */
 
 
@@ -234,6 +234,25 @@ body {
     border: 1px solid #ddd;
 }
 
+.shop-slider-sm {
+    background: white;
+    padding: 0;
+}
+
+.owl-carousel-sm .item img {
+    width: 80px!important;
+    height: 80px!important;
+    border: none!important;
+    border-radius: 0!important;
+}
+
+#owl-carousel .item img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
 .shop-item {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -381,6 +400,50 @@ body {
 .with-label {
     padding-top: 1rem!important;
     padding-bottom: 0.5rem;
+}
+
+
+/* 珠宝店 */
+
+.card-jewelry-shop {
+    background: white;
+    margin-bottom: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-jewelry-shop-title,
+.card-jewlry-shop-foot {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.jewelry-well {
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+}
+
+.jewelry-well img {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    max-width: 100%;
+}
+
+.jewelry-content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.jewelry-content h3 {
+    margin-bottom: 20px;
 }
 
 
