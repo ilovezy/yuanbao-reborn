@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-06 20:32:13
+* @Last Modified time: 2015-12-06 21:00:45
 */
 
 
@@ -266,6 +266,10 @@ body {
     padding-bottom: 10px;
     border-top: 1px solid #ddd;
     background: white;
+}
+
+.shop-item h4 {
+    margin-top: 0;
 }
 
 .shop-img {
@@ -1644,6 +1648,10 @@ ul.dropdown-menu {
     background: white;
 }
 
+.card-logistics img {
+    padding-top: 10px;
+}
+
 .all-order-form {
     background: #f3f3f3!important;
 }
@@ -1788,6 +1796,10 @@ ul.dropdown-menu {
     color: #f60;
 }
 
+.notify {
+    padding: 15px 15px 0 15px!important;
+}
+
 .address-card div p.shipping-address {
     font-size: .8em;
 }
@@ -1870,7 +1882,7 @@ ul.dropdown-menu {
 
 .shopping-cart-item .shopping-cart-item-info {
     overflow: hidden;
-    max-width: 40%;
+    max-width: 35%;
 }
 
 .shopping-cart-item .text-yellow {
