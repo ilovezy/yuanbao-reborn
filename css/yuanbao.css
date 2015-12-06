@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-05 16:22:35
+* @Last Modified time: 2015-12-06 19:56:46
 */
 
 
@@ -29,7 +29,15 @@ a {
 }
 
 .nav-tabs li a {
-    color: #4C4949!important;
+    color: #4c4949!important;
+}
+
+
+/* 灰色的边距 */
+
+.gutter {
+    height: 15px;
+    background: #f3f3f3;
 }
 
 
@@ -51,7 +59,7 @@ body {
 /* grey-font-color #4C4949;  orange #ff6600;  pink #ff6349 yellow #ffae29*/
 
 .color-pink {
-    color: #F05CE9;
+    color: #f05ce9;
 }
 
 .color-blue {
@@ -59,15 +67,15 @@ body {
 }
 
 .text-orange {
-    color: #ff6600
+    color: #f60;
 }
 
 .text-pink {
-    color: #ff6349
+    color: #ff6349;
 }
 
 .text-yellow {
-    color: #ffae29
+    color: #ffae29;
 }
 
 .text-grey {
@@ -145,26 +153,26 @@ body {
 }
 
 .nav {
-    height: 50px;
-    line-height: 50px;
     font-size: 1.8rem;
-    text-align: center;
-    background: #ff6600;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    line-height: 50px;
     overflow: hidden;
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    color: white;
+    background: #f60;
 }
 
 .nav-white {
-    background: white;
     color: black;
     border-bottom: 1px solid #ccc;
+    background: white;
 }
 
 .nav-white a {
-    background: white;
     color: black;
+    background: white;
 }
 
 .btn-pink,
@@ -176,8 +184,8 @@ body {
 .btn-pink:active.focus,
 .btn-pink.active.focus {
     color: white;
-    background: #ff6349!important;
     border: 1px solid #ff6349!important;
+    background: #ff6349!important;
 }
 
 .btn-grey,
@@ -189,8 +197,8 @@ body {
 .btn-grey:active.focus,
 .btn-grey.active.focus {
     color: #428bca;
-    background: #ddd!important;
     border: 1px solid #ddd!important;
+    background: #ddd!important;
 }
 
 .btn-white,
@@ -201,19 +209,19 @@ body {
 .btn-white.focus,
 .btn-white:active.focus,
 .btn-white.active.focus {
-    color: #3F3232;
-    background: white!important;
+    color: #3f3232;
     border: 1px solid white!important;
+    background: white!important;
 }
 
 .btn-orange-ghost {
-    border: 1px solid #ff6349;
-    color: #FF6349;
-    background: white;
     position: relative;
     top: -3px;
+    color: #ff6349;
+    border: 1px solid #ff6349;
     -webkit-border-radius: 4px;
     border-radius: 4px;
+    background: white;
 }
 
 
@@ -223,20 +231,20 @@ body {
 /* 店铺轮播图的 */
 
 .shop-slider {
-    background: white;
     padding: 1rem;
+    background: white;
 }
 
-#owl-carousel .item img {
+.owl-carousel .item img {
     width: 140px;
     height: 140px;
-    border-radius: 8px;
     border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .shop-slider-sm {
-    background: white;
     padding: 0;
+    background: white;
 }
 
 .owl-carousel-sm .item img {
@@ -246,18 +254,18 @@ body {
     border-radius: 0!important;
 }
 
-#owl-carousel .item img {
+.owl-carousel .item img {
     width: 140px;
     height: 140px;
-    border-radius: 8px;
     border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .shop-item {
     padding-top: 10px;
     padding-bottom: 10px;
-    background: white;
     border-top: 1px solid #ddd;
+    background: white;
 }
 
 .shop-img {
@@ -272,22 +280,22 @@ body {
 }
 
 .shop-img-mask {
+    line-height: 30px;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 30px;
-    line-height: 30px;
+    text-align: center;
     color: white;
     border-radius: 0 0 4px 4px;
-    text-align: center;
-    background: rgba(49, 43, 43, 0.7);
+    background: rgba(49, 43, 43, .7);
 }
 
 .btn-two-level {
-    border: 1px solid #ff6349;
-    color: #ff6349;
     display: inline-block;
     padding: 0;
+    color: #ff6349;
+    border: 1px solid #ff6349;
     border-radius: 4px;
 }
 
@@ -296,16 +304,16 @@ body {
 }
 
 .btn-two-level span:nth-child(1) {
-    background: white;
     padding: 3px 5px;
     border-radius: 4px 4px 0 0;
+    background: white;
 }
 
 .btn-two-level span:nth-child(2) {
-    background: #ff6349;
-    color: white;
     padding: 3px 5px;
+    color: white;
     border-radius: 0 0 4px 4px;
+    background: #ff6349;
 }
 
 
@@ -316,35 +324,35 @@ body {
 }
 
 .good-card-title {
-    padding: 1rem;
+    font-size: 2rem;
     position: absolute;
     width: 100%;
+    padding: 1rem;
     color: black;
-    font-size: 2rem;
 }
 
 .circle-icon {
+    line-height: 30px;
     display: inline-block;
     width: 30px;
     height: 30px;
-    line-height: 30px;
+    margin-left: 1rem;
+    text-align: center;
+    color: #eee;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #7A7474;
-    color: #eee;
-    text-align: center;
-    margin-left: 1rem;
+    background: #7a7474;
 }
 
 .good-card-mask {
     font-size: 3rem;
-    text-align: center;
-    background: rgba(49, 43, 43, 0.7);
     position: absolute;
     bottom: 0;
-    color: white;
     width: 100%;
     padding: 1rem;
+    text-align: center;
+    color: white;
+    background: rgba(49, 43, 43, .7);
 }
 
 .good-info {
@@ -363,30 +371,30 @@ body {
 }
 
 .good-card-content-foot {
+    padding: 5px 15px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 5px 15px;
 }
 
 
 /* 最新消息 */
 
 .label-lg {
+    font-size: 4rem;
+    line-height: 50px;
     width: 50px;
     height: 50px;
-    line-height: 50px;
     text-align: center;
-    font-size: 4rem;
-    border-radius: 4px;
     color: white;
+    border-radius: 4px;
 }
 
 .label-green {
-    background: #7EE86A;
+    background: #7ee86a;
 }
 
 .label-blue {
-    background: #36EFF1;
+    background: #36eff1;
 }
 
 .label-red {
@@ -399,27 +407,27 @@ body {
 
 .with-label {
     padding-top: 1rem!important;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 
 /* 钱款去向 */
 
 .money-step {
-    background: white;
-    padding: 30px 15px;
     overflow: hidden;
+    padding: 30px 15px;
+    background: white;
 }
 
 .money-step-item {
-    float: left;
     display: inline-block;
+    float: left;
     width: 33.3%;
     text-align: center;
 }
 
 .text-green {
-    color: #2BB32B;
+    color: #2bb32b;
 }
 
 .money-step-outter {
@@ -430,56 +438,56 @@ body {
 }
 
 .money-step-label {
+    position: absolute;
+    z-index: 2000;
+    left: 50%;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    border: 3px solid #ddd;
-    background: white;
-    z-index: 2000;
-    position: absolute;
-    left: 50%;
     margin-left: -20px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    background: white;
 }
 
 .money-step-label:before {
-    content: "√";
+    font-family: consolas;
     font-size: 40px;
     line-height: 40px;
+    content: '√';
     color: #ddd;
-    font-family: consolas;
 }
 
 .money-step-label.active:before {
-    color: #2BB32B;
+    color: #2bb32b;
 }
 
 .money-step-label.active:after {
-    content: "";
-    height: 3px;
-    background: #2BB32B;
-    margin-top: 17px;
     position: absolute;
+    height: 3px;
+    margin-top: 17px;
+    content: '';
+    background: #2bb32b;
 }
 
 .money-step-label.active {
-    border: 3px solid #2BB32B;
+    border: 3px solid #2bb32b;
 }
 
 .card-money-title {
     padding-top: 15px;
     padding-bottom: 15px;
-    background: white;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 
 /* 珠宝店 */
 
 .card-jewelry-shop {
-    background: white;
     margin-bottom: 1rem;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .card-jewelry-shop-title,
@@ -502,14 +510,14 @@ body {
 }
 
 .jewelry-content {
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 2000;
     width: 100%;
     height: 100%;
     padding-top: 5px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, .5);
 }
 
 .jewelry-content h3 {
@@ -520,9 +528,9 @@ body {
 /* 合作伙伴 */
 
 .partener-gutter {
-    background: #eee;
     padding-top: 5px;
     padding-bottom: 5px;
+    background: #eee;
 }
 
 .partener-gutter-left {
@@ -553,8 +561,8 @@ body {
 }
 
 .shopping-cart-right {
-    float: right;
     font-size: 2rem!important;
+    float: right;
 }
 
 
@@ -578,8 +586,8 @@ ul.dropdown-menu {
 }
 
 .img-md {
-    height: 60px;
     width: 60px;
+    height: 60px;
 }
 
 .img-lg {
@@ -591,29 +599,29 @@ ul.dropdown-menu {
 /* 首页 */
 
 .index-filter {
-    background: rgba(145, 145, 145, 0.9);
-    color: white;
-    display: none;
     position: absolute;
+    z-index: 2000;
+    display: none;
     width: 100%;
     padding-bottom: 5px;
-    z-index: 2000;
+    color: white;
+    background: rgba(145, 145, 145, .9);
 }
 
 .index-filter-card {
-    border-bottom: 1px solid #897D7D;
     padding-bottom: 1rem;
+    border-bottom: 1px solid #897d7d;
 }
 
 .index-filter-card .btn {
-    margin-right: 1.5rem;
     min-width: 6rem;
+    margin-right: 1.5rem;
 }
 
 .index-filter-confirm {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #897D7D;
+    border-bottom: 1px solid #897d7d;
 }
 
 
@@ -627,16 +635,16 @@ ul.dropdown-menu {
 }
 
 .classify-bar .input-group * {
-    background: #ddd;
     border-bottom: none;
+    background: #ddd;
 }
 
 .classify-bar .input-group button,
 .classify-bar .input-group .form-control {
-    border: none;
-    box-shadow: none;
     font-size: 1.6rem;
+    border: none;
     border-bottom: none;
+    box-shadow: none;
 }
 
 .classify-bar .input-group .form-control {
@@ -644,18 +652,18 @@ ul.dropdown-menu {
 }
 
 .classify-bar .input-group-btn {
+    font-size: 1.6rem;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    font-size: 1.6rem;
 }
 
 .classify-bar .input-group .caret {
-    margin-left: 0.6rem;
+    margin-left: .6rem;
 }
 
 .classify-bar .classify-bar-cancel {
+    margin-top: .7rem;
     padding-left: 0;
-    margin-top: 0.7rem;
 }
 
 .classify-collection {
@@ -665,7 +673,7 @@ ul.dropdown-menu {
     background: white;
 }
 
-.classify-collection>li {
+.classify-collection > li {
     padding: 1rem 2rem;
     border-bottom: 1px solid #ccc;
 }
@@ -675,18 +683,18 @@ ul.dropdown-menu {
 
 .selector-content {
     position: absolute;
+    z-index: 999;
+    display: none;
     width: 100%;
     padding: 15px 0 5px 0;
-    background: rgba(145, 145, 145, 0.9);
-    display: none;
-    z-index: 999;
+    background: rgba(145, 145, 145, .9);
 }
 
 .selector-content-foot {
+    margin: 15px 0 0 0;
+    padding-top: 10px;
     text-align: center;
     border-top: 1px solid white;
-    padding-top: 10px;
-    margin: 15px 0 0 0;
 }
 
 .selector-content-body button {
@@ -700,21 +708,21 @@ ul.dropdown-menu {
 .close-selector,
 .close-selector:before {
     display: inline-block;
-    background: white;
     width: 50px;
     height: 5px;
+    background: white;
 }
 
 .close-selector:before {
-    content: "";
+    content: '';
 }
 
 
 /* 我的 */
 
 .my-top {
-    background: url('../img/my/top-bg.png') no-repeat;
     height: 180px;
+    background: url('../img/my/top-bg.png') no-repeat;
 }
 
 .my-top-avatar {
@@ -722,9 +730,9 @@ ul.dropdown-menu {
 }
 
 .my-top-fans {
+    font-size: 1.6rem;
     margin-top: 70px;
     color: white;
-    font-size: 1.6rem;
 }
 
 .my-top-fans-num {
@@ -733,8 +741,8 @@ ul.dropdown-menu {
 
 .my-top-avatar-img {
     max-width: 100%;
-    border-radius: 50%;
     margin-top: 40px;
+    border-radius: 50%;
 }
 
 
@@ -746,14 +754,14 @@ ul.dropdown-menu {
 
 .selector-list a {
     display: block;
-    color: #4C4949;
+    color: #4c4949;
 }
 
 .selector-list-item {
-    border-bottom: 1px solid #ddd;
+    padding: 1.5rem 0 .5rem 0;
+    transition: all .3s ease-in-out;
     border-right: 1px solid #ddd;
-    padding: 1.5rem 0 0.5rem 0;
-    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #ddd;
 }
 
 .selector-list-item:hover {
@@ -763,7 +771,7 @@ ul.dropdown-menu {
 .selector-list-item img {
     width: 46px;
     height: 40px;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 .selector-list-item p {
@@ -774,18 +782,18 @@ ul.dropdown-menu {
 /* 个人账户*/
 
 .countcard {
-    height: 80px;
-    line-height: 80px;
     font-size: 1.6rem;
+    line-height: 80px;
+    height: 80px;
     border-bottom: 1px solid #ddd;
 }
 
-.countcard .countcard-item-action>div {
-    height: 40px;
+.countcard .countcard-item-action > div {
     line-height: 40px;
+    height: 40px;
 }
 
-.countcard>div {
+.countcard > div {
     float: left;
 }
 
@@ -812,22 +820,22 @@ ul.dropdown-menu {
 }
 
 .userInfo-main .readable {
-    letter-spacing: 0.5rem;
+    letter-spacing: .5rem;
 }
 
 .userInfo-main .readable-1 {
-    letter-spacing: 0.3rem;
+    letter-spacing: .3rem;
 }
 
 .card-list-item.with-avatar {
-    height: 90px;
     line-height: 90px;
+    height: 90px;
     border-bottom: 1px solid #ddd;
 }
 
 .card-list-item {
-    height: 50px;
     line-height: 50px;
+    height: 50px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -874,10 +882,10 @@ ul.dropdown-menu {
 }
 
 .tc-user {
-    border-bottom: 1px solid #ddd;
+    height: 80px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    height: 80px;
+    border-bottom: 1px solid #ddd;
 }
 
 .tc-user .avatar-2 {
@@ -899,15 +907,15 @@ ul.dropdown-menu {
 }
 
 .tc-fans .col-xs-6 {
-    text-align: center;
-    border-right: 1px solid #ddd;
-    padding-top: 1rem;
     font-size: 1.8rem;
+    padding-top: 1rem;
+    text-align: center;
     color: #bbb;
+    border-right: 1px solid #ddd;
 }
 
 .tc-fans .col-xs-6 span {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 }
 
 .tc-icons {
@@ -916,8 +924,8 @@ ul.dropdown-menu {
 }
 
 .card-list-item .avatar-2 {
-    height: 60px;
     line-height: 60px;
+    height: 60px;
     margin-top: 5px;
 }
 
@@ -947,30 +955,30 @@ ul.dropdown-menu {
 }
 
 .card-group-item {
+    padding-top: .5rem;
     background: white;
-    padding-top: 0.5rem;
 }
 
 .card-group-item-title {
     font-size: 1.6rem;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     margin-bottom: 0;
 }
 
 .card-group-item .img-tiny {
-    margin-top: 5px;
     float: right;
+    margin-top: 5px;
 }
 
 
 /* 邀请粉丝 */
 
 .invite {
-    background: white;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .register-add {
@@ -981,10 +989,10 @@ ul.dropdown-menu {
 /* 推广 */
 
 .promote-nav {
-    background: #F7F7F7;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
     border-bottom: 1px solid #ddd;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    background: #f7f7f7;
 }
 
 .promote-nav img {
@@ -997,30 +1005,30 @@ ul.dropdown-menu {
 }
 
 .promote-nav .btn-group .btn {
-    border-color: #ff6600;
+    border-color: #f60;
 }
 
 .promote-nav .btn-group .btn.active {
-    background: #ff6600;
     color: white;
+    background: #f60;
 }
 
 .promote-card {
-    background: white;
-    border-top: 1px solid #ddd;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-top: 1px solid #ddd;
+    background: white;
 }
 
 .promote-card .promote-time {
-    color: #aaa;
     margin-bottom: 1rem;
+    color: #aaa;
 }
 
 .promote-card .promote-img {
+    float: right;
     width: 50px;
     height: 50px;
-    float: right;
 }
 
 .promote-card .promote-share {
@@ -1031,19 +1039,19 @@ ul.dropdown-menu {
 .promote-card .promote-note {
     font-size: 1.7rem;
     padding-left: 0;
-    color: #4C4949;
+    color: #4c4949;
 }
 
 .promote-card .share-point {
     font-size: 1.6rem;
     margin-top: 1rem;
-    color: #ff6600;
     margin-left: 1rem;
+    color: #f60;
 }
 
 .promote-card .share-btn {
-    padding: 0.1rem 0.3rem;
     font-size: 1.6rem;
+    padding: .1rem .3rem;
     color: #aaa;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -1052,24 +1060,24 @@ ul.dropdown-menu {
 .promote-card .share-btn img {
     width: 1.6rem;
     height: 1.6rem;
-    margin-top: -0.2rem;
+    margin-top: -.2rem;
 }
 
 
 /* 我的推广的头像部分*/
 
 .promote-user {
-    height: 55px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 1rem;
     overflow: hidden;
-    margin-left: 1.5rem;
+    height: 55px;
     margin-top: -3px;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    border-bottom: 1px solid #ddd;
 }
 
 .promote-user .col-xs-3 {
-    margin-left: -1rem;
     margin-right: 0;
+    margin-left: -1rem;
 }
 
 .promote-user .col-xs-9 {
@@ -1100,8 +1108,8 @@ ul.dropdown-menu {
 }
 
 .search-bar .col-xs-5 {
-    padding-left: 0!important;
     padding-right: 0!important;
+    padding-left: 0!important;
 }
 
 .search-bar .input-group {
@@ -1121,8 +1129,8 @@ ul.dropdown-menu {
 /* 社群 */
 
 .com-card {
-    padding-top: 1rem;
     overflow: hidden;
+    padding-top: 1rem;
 }
 
 .com-card:last-child {
@@ -1130,16 +1138,16 @@ ul.dropdown-menu {
 }
 
 .card-list-img {
-    width: 33%;
     float: left;
+    width: 33%;
     padding: 1px;
 }
 
 .com-card-title {
-    text-align: center;
     position: relative;
     overflow: hidden;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .com-card-title hr {
@@ -1149,12 +1157,12 @@ ul.dropdown-menu {
 }
 
 .com-card-title span {
-    position: absolute;
-    width: 50px;
-    background: white;
-    margin-left: -25px;
-    top: 0;
     font-size: 1.6rem;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    margin-left: -25px;
+    background: white;
 }
 
 
@@ -1163,18 +1171,18 @@ ul.dropdown-menu {
 .media-card-item {
     padding-top: 10px;
     padding-bottom: 10px;
-    background: white;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .media-card-item .col-xs-3 {
-    padding-left: 5px;
     padding-right: 0;
+    padding-left: 5px;
 }
 
 .media-card-item .col-xs-9 {
-    padding-left: 10px;
     padding-right: 0;
+    padding-left: 10px;
 }
 
 .media-img {
@@ -1185,14 +1193,14 @@ ul.dropdown-menu {
 .media-card-title {
     font-size: 1.6rem!important;
     font-weight: 600;
-    color: black!important;
     margin-top: -3px;
+    color: black!important;
 }
 
 .media-card-content p {
     font-size: 1.3rem;
-    color: #bbb;
     margin-bottom: 2px;
+    color: #bbb;
 }
 
 
@@ -1200,14 +1208,14 @@ ul.dropdown-menu {
 
 .msg-card-group-item {
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    background: white;
+    padding-bottom: .5rem;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .msg-card-group-item .col-xs-2 {
-    padding-left: 1rem;
     position: relative;
+    padding-left: 1rem;
 }
 
 .with-num {
@@ -1217,33 +1225,25 @@ ul.dropdown-menu {
 }
 
 .msg-num {
+    font-size: .8rem;
+    line-height: 14px;
     position: absolute;
-    width: 16px;
-    height: 16px;
-    text-align: center;
-    font-size: 0.8rem;
-    display: inline-block;
-    padding: 2px;
-    background: red;
-    color: white;
     top: -5px;
     right: -5px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    text-align: center;
+    color: white;
     border-radius: 50%;
+    background: red;
 }
 
 .msg-title {
+    font-size: 1.8rem;
     display: inline-block;
     padding-top: 3px;
-    font-size: 1.8rem;
-}
-
-.msg-time {
-    float: right;
-    color: #aaa;
-}
-
-.msg-content {
-    color: #aaa;
 }
 
 
@@ -1253,15 +1253,15 @@ ul.dropdown-menu {
 /* 聚宝盆红色块 */
 
 .well-red {
-    background: #ed4930;
-    color: white;
     padding: 2rem;
+    color: white;
+    background: #ed4930;
 }
 
 .well-red-title {
-    height: 2rem;
-    line-height: 2rem;
     font-size: 2rem;
+    line-height: 2rem;
+    height: 2rem;
 }
 
 .well-red-title img {
@@ -1275,8 +1275,8 @@ ul.dropdown-menu {
 }
 
 .well-red-num {
-    margin-top: 2rem;
     font-size: 6rem;
+    margin-top: 2rem;
 }
 
 
@@ -1284,8 +1284,8 @@ ul.dropdown-menu {
 
 .well-white {
     padding: 1.8rem;
-    background: white;
     color: #aaa;
+    background: white;
 }
 
 .well-white-num {
@@ -1298,25 +1298,25 @@ ul.dropdown-menu {
 /* 聚宝盆灰色块 */
 
 .well-grey {
-    background: #eee;
     overflow: hidden;
     padding-bottom: 1rem;
+    background: #eee;
 }
 
 .well-grey-item {
-    height: 100px;
-    background: #eee;
-    width: 49.6%;
     float: left;
+    width: 49.6%;
+    height: 100px;
     padding: 2rem 1.5rem;
+    background: #eee;
 }
 
 .well-grey-gutter {
-    width: 2px;
     position: relative;
     top: 20px;
-    height: 70px;
     float: left;
+    width: 2px;
+    height: 70px;
     background: #ddd;
 }
 
@@ -1326,8 +1326,8 @@ ul.dropdown-menu {
 
 .well-grey-num {
     font-size: 2.4rem;
-    color: #847A7A;
     margin-top: 1rem;
+    color: #847a7a;
 }
 
 
@@ -1360,24 +1360,24 @@ ul.dropdown-menu {
 
 .login-form .flat-form-login-icon {
     float: left;
-    margin-right: 0.5rem;
+    margin-right: .5rem;
 }
 
 .login-form .flat-form-login-icon img {
+    float: left;
     width: 36px;
     height: 36px;
-    float: left;
 }
 
 .login-form .flat-form-label {
-    padding-top: 0.5rem;
     font-size: 2rem;
     margin-right: 1rem;
+    padding-top: .5rem;
 }
 
 .flat-form-confirm {
     padding-bottom: 5px;
-    color: #aaa
+    color: #aaa;
 }
 
 .label-red {
@@ -1385,17 +1385,17 @@ ul.dropdown-menu {
 }
 
 .login-form .flat-input {
-    padding-top: 0.5em;
     font-size: 1.8rem;
+    padding-top: .5em;
 }
 
 
 /* 设置 */
 
 .setting-card {
-    background: white;
     font-size: 2rem;
     margin-bottom: 1rem;
+    background: white;
 }
 
 .setting-card a {
@@ -1403,9 +1403,9 @@ ul.dropdown-menu {
 }
 
 .setting-card-num {
-    color: #ddd;
-    margin-right: 1rem;
     font-size: 1.4rem;
+    margin-right: 1rem;
+    color: #ddd;
 }
 
 .setting-card .glyphicon {
@@ -1420,13 +1420,13 @@ ul.dropdown-menu {
 }
 
 .setting-card-collection {
-    padding-left: 1rem;
     overflow: hidden;
+    padding-left: 1rem;
 }
 
 .setting-card-item {
-    border-bottom: 1px solid #ddd;
     padding: 1.2rem 1rem 1.2rem 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .setting-card-item.no-border {
@@ -1436,37 +1436,33 @@ ul.dropdown-menu {
 
 /* 商城 */
 
-.mr-1rem {
-    margin-right: 1rem;
-}
-
 .store-nav {
-    padding-top: 0.2rem;
+    padding-top: .2rem;
 }
 
 .store-nav img {
     width: 20px;
-    margin-top: -7px
+    margin-top: -7px;
 }
 
 .store-nav-search {
-    width: 70%;
     float: left;
-    padding-top: 0.5rem;
+    width: 70%;
+    padding-top: .5rem;
 }
 
 
 /* 商品展示，这里用固定高度了 */
 
 .store-card {
-    background: white;
-    padding-top: 1rem;
     margin-bottom: 1rem;
+    padding-top: 1rem;
+    background: white;
 }
 
 .store-card .store-card-title {
     font-size: 2rem;
-    color: #ff6600;
+    color: #f60;
 }
 
 .store-card .more,
@@ -1512,11 +1508,11 @@ ul.dropdown-menu {
 /* account-change 账户变化记录的 tab页，覆盖bootstrap */
 
 .nav.account-change {
-    background: white;
-    padding-left: 0;
-    padding-right: 0;
     height: 46px;
+    padding-right: 0;
+    padding-left: 0;
     border-right: none;
+    background: white;
 }
 
 .account-change * {
@@ -1526,8 +1522,8 @@ ul.dropdown-menu {
 
 .account-change li {
     width: 19%;
-    border-right: 1px solid #ddd!important;
     text-align: center;
+    border-right: 1px solid #ddd!important;
 }
 
 .account-change li:nth-child(5) {
@@ -1536,17 +1532,17 @@ ul.dropdown-menu {
 }
 
 .account-change li a {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
 }
 
 .account-change li.active {
-    border-bottom: 4px solid #ff6600!important;
+    border-bottom: 4px solid #f60!important;
 }
 
 .tab-content {
-    background: white;
     border-top: 1px solid #ddd;
+    background: white;
 }
 
 .tab-content-grey {
@@ -1575,33 +1571,33 @@ ul.dropdown-menu {
 }
 
 .complex-input-orange {
+    line-height: 34px;
     display: inline-block;
+    height: 34px;
     padding: 0 3px;
+    color: white;
     border: 1px solid #ffae29;
     border-radius: 4px;
     background: #ffae29;
-    color: white;
-    height: 34px;
-    line-height: 34px;
 }
 
 .complex-input-green {
-    display: inline-block;
-    padding: 0 3px;
-    border: 1px solid #6ECC66;
-    border-radius: 4px;
-    background: #6ECC66;
-    color: white;
-    height: 34px;
     line-height: 34px;
+    display: inline-block;
+    height: 34px;
+    padding: 0 3px;
+    color: white;
+    border: 1px solid #6ecc66;
+    border-radius: 4px;
+    background: #6ecc66;
 }
 
 .complex-input-num {
-    background: white;
-    color: #aaa;
-    height: 32px;
     display: inline-block;
+    height: 32px;
     padding: 0 3px;
+    color: #aaa;
+    background: white;
 }
 
 .comment {
@@ -1612,34 +1608,34 @@ ul.dropdown-menu {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #428bca;
-    color: white;
     padding: 2px 15px 0 5px;
+    color: white;
     border-radius: 0 20px 20px 0;
+    background: #428bca;
 }
 
 .comment-card {
-    border-bottom: 1px solid #ccc;
     padding-top: 10px;
     padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
 }
 
 .comment-card .comment-username {
-    color: #428bca;
     margin-bottom: 0;
+    color: #428bca;
 }
 
 .comment-card .comment-date {
+    font-size: .8em;
     color: #bbb;
-    font-size: 0.8em;
 }
 
 
 /* 我的订单 */
 
 .card-info {
-    background: white!important;
     border-bottom: 1px solid #ddd!important;
+    background: white!important;
 }
 
 .tab-order-form {
@@ -1657,22 +1653,22 @@ ul.dropdown-menu {
 }
 
 .card-order {
-    margin-bottom: 15px;
-    background: white;
     overflow: hidden;
+    margin-bottom: 15px;
     border-bottom: 1px solid #ccc;
+    background: white;
 }
 
-.card-order>div {
-    border-top: 1px solid #ccc;
+.card-order > div {
     padding: 10px 15px;
+    border-top: 1px solid #ccc;
 }
 
 .card-order .card-order-body {
     overflow: hidden;
 }
 
-.card-order .card-order-body>div {
+.card-order .card-order-body > div {
     float: left;
 }
 
@@ -1709,58 +1705,58 @@ ul.dropdown-menu {
 }
 
 .card-logistics-info-item {
-    height: 80px;
     overflow: hidden;
+    height: 80px;
 }
 
 .logistics-label {
     width: 20px;
     height: 20px;
-    background: #ddd;
     border-radius: 50%;
+    background: #ddd;
 }
 
 .logistics-label:after {
-    content: "";
     position: absolute;
     top: 20px;
     width: 2px;
-    margin-left: 9px;
     height: 80px;
+    margin-left: 9px;
+    content: '';
     background: #ddd;
 }
 
 .logistics-label.active {
     width: 20px;
     height: 20px;
-    background: green;
     border-radius: 50%;
+    background: green;
 }
 
 .logistics-label.active:after {
-    content: "";
     position: absolute;
     top: 20px;
     width: 2px;
-    margin-left: 9px;
     height: 80px;
+    margin-left: 9px;
+    content: '';
     background: green;
 }
 
 .logistics-label {
     width: 20px;
     height: 20px;
-    background: #ddd;
     border-radius: 50%;
+    background: #ddd;
 }
 
 .logistics-label:after {
-    content: "";
     position: absolute;
     top: 20px;
     width: 2px;
-    margin-left: 9px;
     height: 80px;
+    margin-left: 9px;
+    content: '';
     background: #ddd;
 }
 
@@ -1772,12 +1768,12 @@ ul.dropdown-menu {
 /* 填写地址*/
 
 .address-card {
-    border-bottom: 1px solid #ccc;
     padding: 10px 15px 7px;
+    border-bottom: 1px solid #ccc;
     background: white;
 }
 
-.address-card div {
+.address-card > div {
     float: left;
 }
 
@@ -1793,24 +1789,20 @@ ul.dropdown-menu {
 
 .address-card div.address-notify {
     margin-right: 5px;
-    color: #ff6600;
+    color: #f60;
 }
 
 .address-card div p.shipping-address {
-    font-size: 0.8em;
+    font-size: .8em;
 }
 
 .footer-new-address {
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
     padding: 10px;
+    text-align: center;
     background: white;
-}
-
-.footer-new-address .btn {
-    width: 50%;
 }
 
 
@@ -1819,21 +1811,17 @@ ul.dropdown-menu {
 .card-share {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-}
-
-.gutter {
-    height: 15px;
-    background: #f3f3f3;
+    background: white;
 }
 
 
 /* 购物车 */
 
 .shopping-cart-top {
-    background: white;
+    position: relative;
     padding: 10px 15px;
     border-bottom: 1px solid #ccc;
-    position: relative;
+    background: white;
 }
 
 .shopping-cart-top .glyphicon-map-marker {
@@ -1861,12 +1849,12 @@ ul.dropdown-menu {
     background: white;
 }
 
-.card-shopping-cart input[type="radio"] {
-    width: 2rem;
-    height: 2rem;
+.card-shopping-cart input[type='radio'] {
     position: relative;
     top: -5px;
     display: inline-block;
+    width: 2rem;
+    height: 2rem;
     margin-right: 1rem;
 }
 
@@ -1876,31 +1864,31 @@ ul.dropdown-menu {
 }
 
 .shopping-cart-item {
+    overflow: hidden;
+    min-height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: white;
     border-top: 1px solid #ddd;
-    min-height: 100px;
-    overflow: hidden;
+    background: white;
 }
 
 .shopping-cart-item .shopping-cart-item-info {
-    max-width: 40%;
     overflow: hidden;
+    max-width: 40%;
 }
 
 .shopping-cart-item .text-yellow {
-    margin-right: -0.5rem;
+    margin-right: -.5rem;
 }
 
 .shopping-cart-item .glyphicon-trash {
-    margin-top: 15px;
     font-size: 2rem;
+    margin-top: 15px;
 }
 
 .shopping-cart-count {
-    border: 1px solid #ccc;
     display: inline-block;
+    border: 1px solid #ccc;
 }
 
 .shopping-cart-count * {
@@ -1909,10 +1897,10 @@ ul.dropdown-menu {
 }
 
 .shopping-cart-count span {
-    display: inline-block;
-    height: 24px;
-    width: 24px;
     line-height: 24px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
     margin-right: 0;
 }
 
@@ -1921,24 +1909,24 @@ ul.dropdown-menu {
 }
 
 .shopping-cart-count span:nth-child(3) {
-    border-left: 1px solid #ccc;
     color: #ffae29;
+    border-left: 1px solid #ccc;
 }
 
 .shopping-cart-count input {
-    margin-left: 0;
     top: 0;
-    height: 20px;
     width: 20px;
+    height: 20px;
+    margin-left: 0;
     border: none;
 }
 
 .shopping-cart-foot {
-    background: white;
-    padding: 10px 15px 5px 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 10px 15px 5px 15px;
+    background: white;
 }
 
 .shopping-cart-foot .checkbox {
@@ -1954,42 +1942,30 @@ ul.dropdown-menu {
 
 /* 表单样式 */
 
-.notify {
-    height: 20px;
-    line-height: 20px;
-    font-size: 1.6rem;
-    color: #4C4949;
-    margin: 0;
-    padding: 1rem;
-    padding-top: 1.2rem;
-}
-
 .form {
     margin-top: 2rem;
-    padding-left: 15px;
     padding-right: 15px;
-    background: white;
+    padding-left: 15px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .flat-input-group {
     padding: 15px 0;
-    background: white;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .form .flat-input {
     font-size: 1.6rem;
+    line-height: 50px;
     display: block;
     width: 100%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
     height: 50px;
-    line-height: 50px;
+    border: none;
+    border-bottom: 1px solid #ddd;
 }
 
 .form .flat-input:last-child {
@@ -2004,20 +1980,20 @@ ul.dropdown-menu {
     font-size: 1.6rem;
     display: block;
     width: 100%;
-    border: none;
-    height: 100px;
+    height: 80px;
+    margin-top: 12px;
     resize: none;
+    border: none;
 }
 
 
 /* 找回密码 */
 
 .form-group {
-    border-bottom: 1px solid #ddd;
-    height: 50px;
-    /*line-height: 50px;*/
     font-size: 1.6rem;
+    height: 50px;
     margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .form-group .col-xs-4 {
@@ -2036,43 +2012,44 @@ ul.dropdown-menu {
 
 /* flat form-group */
 
+.form-label {
+    line-height: 50px;
+}
+
 .flat-form-group {
-    background: white;
     overflow: hidden;
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
     border-bottom: 1px solid #ddd;
+    background: white;
 }
 
 .flat-form-label {
+    font-size: 1.8rem;
     line-height: 34px;
     height: 34px;
-    font-size: 1.8rem;
 }
 
 .flat-form-avatar {
-    float: left;
-    margin-right: 1rem;
     position: relative;
     top: -3px;
+    float: left;
+    margin-right: 1rem;
 }
 
 .flat-form-checkbox {
-    width: 2rem;
-    height: 2rem;
-    display: inline-block;
     position: relative;
     top: 3px;
-}
-
-.flat-form-group {
-    padding-top: 1rem!important;
-    padding-bottom: 1rem!important;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
 }
 
 .flat-form-group .flat-input {
-    border: none;
-    height: 34px;
-    line-height: 34px;
     font-size: 1.6rem;
+    line-height: 34px;
+    height: 34px;
+    border: none;
 }
 
 
@@ -2083,24 +2060,24 @@ ul.dropdown-menu {
 }
 
 .footer {
-    background: white;
-    height: 70px;
-    width: 100%;
     position: fixed!important;
-    bottom: 0;
-    border-top: 1px solid #ddd;
-    padding-top: 0.8rem;
-    padding-bottom: 0.3rem;
     z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding-top: .8rem;
+    padding-bottom: .3rem;
+    border-top: 1px solid #ddd;
+    background: white;
 }
 
 .footer img {
     width: 35px;
     height: 35px;
-    margin-bottom: 0.3rem;
+    margin-bottom: .3rem;
 }
 
 .footer p {
-    color: #aaa;
     font: 2rem;
+    color: #aaa;
 }
