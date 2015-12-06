@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-06 19:56:46
+* @Last Modified time: 2015-12-06 20:14:04
 */
 
 
@@ -575,7 +575,8 @@ ul.dropdown-menu {
 
 /* 多个图片大小在这里设置 */
 
-.img-tiny {
+.img-tiny,
+.tc-icons {
     width: 40px;
     height: 40px;
 }
@@ -918,11 +919,6 @@ ul.dropdown-menu {
     margin-bottom: .5rem;
 }
 
-.tc-icons {
-    width: 40px;
-    height: 40px;
-}
-
 .card-list-item .avatar-2 {
     line-height: 60px;
     height: 60px;
@@ -993,11 +989,6 @@ ul.dropdown-menu {
     padding-bottom: .8rem;
     border-bottom: 1px solid #ddd;
     background: #f7f7f7;
-}
-
-.promote-nav img {
-    width: 40px;
-    height: 40px;
 }
 
 .promote-nav .btn-group {
@@ -1320,10 +1311,6 @@ ul.dropdown-menu {
     background: #ddd;
 }
 
-.well-grey-title {
-    color: #aaa;
-}
-
 .well-grey-num {
     font-size: 2.4rem;
     margin-top: 1rem;
@@ -1640,6 +1627,15 @@ ul.dropdown-menu {
 
 .tab-order-form {
     padding: 0!important;
+}
+
+.classify-panel {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.classify-panel .btn {
+    margin: 0 2rem;
 }
 
 .card-logistics {
