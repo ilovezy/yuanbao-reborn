@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-06 21:00:45
+* @Last Modified time: 2015-12-06 21:08:03
 */
 
 
@@ -1384,9 +1384,8 @@ ul.dropdown-menu {
 /* 设置 */
 
 .setting-card {
-    font-size: 2rem;
-    margin-bottom: 1rem;
     background: white;
+    margin-bottom: 1rem;
 }
 
 .setting-card a {
@@ -1406,6 +1405,7 @@ ul.dropdown-menu {
 
 .setting-card-title {
     padding: 1.5rem 1rem;
+    font-size: 1.6rem;
     color: #428bca;
     border-bottom: 1px solid #ddd;
 }
