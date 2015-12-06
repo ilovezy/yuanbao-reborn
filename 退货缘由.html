@@ -5,25 +5,60 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
+    <title>退货缘由</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/yuanbao.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center"></h1>
+    <nav class="nav nav-white">
+        <div class="nav-icon pull-left">
+            <a href="我的.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <span class="nav-title">申请退款/退货</span>
+    </nav>
+
+    <!-- main -->
+    <form class="form form-inline mt-0">
+        <div class="form-group">
+            <div class="col-xs-4 form-label">
+                退货原因：
+            </div>
+            <div class="col-xs-8">
+                <input type="text" class="flat-input" placeholder="收货人">
+            </div>
+        </div>
+
+        <div class="row gutter"></div>
+
+        <div class="form-group">
+            <div class="col-xs-4 form-label">
+                退货说明：
+            </div>
+            <div class="col-xs-8">
+                <input type="text" class="flat-input" placeholder="联系电话">
+            </div>
+        </div>
+
+        <div class="row gutter"></div>
+        <div class="form-group form-group-textarea">
+            <div class="col-xs-4 form-label">
+                上传凭证
+                <br> （最多三张）
+            </div>
+            <div class="col-xs-8">
+                <input type="file" name="" value="" placeholder="" style="margin-top: 15px;">
+            </div>
+        </div>
+
+        <!-- footer button -->
+        <br>
+        <button class="btn btn-default btn-lg btn-block btn-pink">
+            确认提交
+        </button>
+    </form>
 
 
-    </div>
-
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script src="bower_components/angular/angular.min.js"></script> -->
-    <script>
-    </script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-11-11 21:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-12-06 20:14:04
+* @Last Modified time: 2015-12-06 20:32:13
 */
 
 
@@ -1940,8 +1940,7 @@ ul.dropdown-menu {
 
 .form {
     margin-top: 2rem;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px 15px 15px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     background: white;
